@@ -1,0 +1,658 @@
+ARM GAS  C:\Users\mame\AppData\Local\Temp\ccrMhnZz.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.main,"ax",%progbits
+  20              		.align	2
+  21              		.global	main
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	main, %function
+  25              	main:
+  26              	.LFB64:
+  27              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        **** */
+  12:main.c        **** #include <device.h>
+  13:main.c        **** #include "SDI12.h"
+  14:main.c        ****     
+  15:main.c        **** /*========== #BEGIN Define SDI12 sensors ==========//
+  16:main.c        **** //----------   SDI12 Array   ----------//
+  17:main.c        **** SDI12_sensor sensors[2];   
+  18:main.c        **** 
+  19:main.c        **** //----------  (1/2) Solinst  ----------//
+  20:main.c        **** char* labels[] = {"solinst_T","solinst_P"};
+  21:main.c        **** float values[] = {-99.0, -98.0};
+  22:main.c        **** SDI12_sensor solinst = { 
+  23:main.c        ****     .nvars   = 2,
+  24:main.c        ****     .address = "0",
+  25:main.c        ****     .labels  = labels,
+  26:main.c        ****     .values  = values
+  27:main.c        ****     // additional metadata should initialize to 0 or '\0' //
+  28:main.c        **** }; 
+  29:main.c        **** 
+  30:main.c        **** //----------  (2/2) Decagon  ----------//
+ARM GAS  C:\Users\mame\AppData\Local\Temp\ccrMhnZz.s 			page 2
+
+
+  31:main.c        **** char* GS3_labels[] = {"GS3_1","GS3_2","GS3_3"};
+  32:main.c        **** float GS3_values[] = {-99.0, -98.0, -99.9};
+  33:main.c        **** SDI12_sensor GS3 = {
+  34:main.c        ****     .nvars   = 3,
+  35:main.c        ****     .address = "1",
+  36:main.c        ****     .labels  = GS3_labels,
+  37:main.c        ****     .values  = GS3_values        
+  38:main.c        ****     // additional metadata should initialize to 0 or '\0' //
+  39:main.c        **** };  
+  40:main.c        **** // ========== #END   Define SDI12 sensors ==========//*/
+  41:main.c        **** 
+  42:main.c        **** 
+  43:main.c        **** int main(void)
+  44:main.c        **** {
+  28              		.loc 1 44 0
+  29              		.cfi_startproc
+  30              		@ Volatile: function does not return.
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 08B5     		push	{r3, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 3, -8
+  36              		.cfi_offset 14, -4
+  45:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  37              		.loc 1 45 0
+  38              		.syntax unified
+  39              	@ 45 "main.c" 1
+  40 0002 62B6     		CPSIE   i
+  41              	@ 0 "" 2
+  42              		.thumb
+  43              		.syntax unified
+  44              	.L2:
+  46:main.c        **** 
+  47:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  48:main.c        ****     
+  49:main.c        **** 
+  50:main.c        ****     /*
+  51:main.c        ****     uint8 nvars    =  2;
+  52:main.c        ****     char* address  = "0";
+  53:main.c        ****     char* labels[] = {"solinst_T","solinst_P"};
+  54:main.c        ****     float values[] = {-99.0, -98.0};
+  55:main.c        ****     SDI12_sensor solinst = { 
+  56:main.c        ****         .nvars   = nvars,
+  57:main.c        ****         .address = address,
+  58:main.c        ****         .labels  = labels,
+  59:main.c        ****         .values  = values,
+  60:main.c        ****         // additional metadata should initialize to 0 //
+  61:main.c        ****     }; 
+  62:main.c        **** 
+  63:main.c        ****     uint8 GS3_nvars    =  3;
+  64:main.c        ****     char* GS3_address  = "1";
+  65:main.c        ****     char* GS3_labels[] = {"GS3_1","GS3_2","GS3_3"};
+  66:main.c        ****     float GS3_values[] = {-99.0, -98.0, -99.9};
+  67:main.c        ****     SDI12_sensor GS3 = {
+  68:main.c        ****         .nvars   = GS3_nvars,
+  69:main.c        ****         .address = GS3_address,
+  70:main.c        ****         .labels  = GS3_labels,
+ARM GAS  C:\Users\mame\AppData\Local\Temp\ccrMhnZz.s 			page 3
+
+
+  71:main.c        ****         .values  = GS3_values        
+  72:main.c        ****         // additional metadata should initialize to 0 //
+  73:main.c        ****     };  
+  74:main.c        **** 
+  75:main.c        ****     SDI12_sensor sensors[2];    
+  76:main.c        ****     sensors[0] = solinst;
+  77:main.c        ****     sensors[1] = GS3;    
+  78:main.c        ****     //*/
+  79:main.c        ****     
+  80:main.c        ****     
+  81:main.c        ****     /*/
+  82:main.c        ****     sensors[0] = solinst;
+  83:main.c        ****     sensors[1] = GS3;
+  84:main.c        ****     
+  85:main.c        ****     char output[100] = {'\0'};
+  86:main.c        ****     uint8 i, j, k, valid;
+  87:main.c        ****     float M[ (sensors[1]).nvars ];
+  88:main.c        ****     //*/
+  89:main.c        ****     
+  90:main.c        ****     for(;;)
+  91:main.c        ****     {
+  92:main.c        ****         /*
+  93:main.c        ****         SDI12_start();
+  94:main.c        ****         SDI12_Power_Write(1u);
+  95:main.c        ****         
+  96:main.c        ****         
+  97:main.c        ****         // Iterate through each SDI12 sensor
+  98:main.c        ****         // Currently, this is set for debugging a single sensor at a time
+  99:main.c        ****         for (k = 0; k < 2;  k++) {
+ 100:main.c        ****             
+ 101:main.c        ****             valid = 0; // Reinitialize sensor status
+ 102:main.c        ****             
+ 103:main.c        ****             // Let the sensor power up max 10000 ms = 10 * 1000 ms
+ 104:main.c        ****             for (i = 0; i < 10; i++) {
+ 105:main.c        ****                 CyDelay(1000u);
+ 106:main.c        ****                 
+ 107:main.c        ****                 if (SDI12_is_active(&sensors[k])){  
+ 108:main.c        ****                     
+ 109:main.c        ****                     
+ 110:main.c        ****                     //valid = SDI12_change_address(&sensors[0],"0");
+ 111:main.c        ****                     valid = SDI12_info(&sensors[k]); CyDelay(500u);
+ 112:main.c        **** 
+ 113:main.c        ****                     if (SDI12_take_measurement(&sensors[k])) {
+ 114:main.c        ****                         valid = 1; // Successfully took a measurement
+ 115:main.c        ****                         break;                    
+ 116:main.c        ****                     } else {
+ 117:main.c        ****                         valid = -2; // SDI12 sensor powered on, but unable to parse response
+ 118:main.c        ****                     }            
+ 119:main.c        ****                                             
+ 120:main.c        ****                 } else {
+ 121:main.c        ****                     valid = -1; // SDI12 sensor not responding. It may be powered off or have a dif
+ 122:main.c        ****                 }
+ 123:main.c        ****             }
+ 124:main.c        ****             
+ 125:main.c        ****             clear_str(output);
+ 126:main.c        ****             
+ 127:main.c        ****             for (j = 0; j < (sensors[k]).nvars; j++) {
+ARM GAS  C:\Users\mame\AppData\Local\Temp\ccrMhnZz.s 			page 4
+
+
+ 128:main.c        ****                 M[j] = (sensors[k]).values[j];
+ 129:main.c        ****                 sprintf(output,"%s %s %f", output, (sensors[k]).labels[j], (sensors[k]).values[j]);
+ 130:main.c        ****             }            
+ 131:main.c        ****         }
+ 132:main.c        ****                     
+ 133:main.c        ****         SDI12_Power_Write(0u);
+ 134:main.c        ****         SDI12_stop(); 
+ 135:main.c        ****         //*/
+ 136:main.c        ****         
+ 137:main.c        ****         zip_SDI12(3);
+  45              		.loc 1 137 0 discriminator 1
+  46 0004 0320     		movs	r0, #3
+  47 0006 FFF7FEFF 		bl	zip_SDI12
+  48              	.LVL0:
+ 138:main.c        ****         CyDelay(5000u);
+  49              		.loc 1 138 0 discriminator 1
+  50 000a 41F28830 		movw	r0, #5000
+  51 000e FFF7FEFF 		bl	CyDelay
+  52              	.LVL1:
+  53 0012 F7E7     		b	.L2
+  54              		.cfi_endproc
+  55              	.LFE64:
+  56              		.size	main, .-main
+  57              		.text
+  58              	.Letext0:
+  59              		.file 2 "c:\\program files\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.1\\arm
+  60              		.file 3 "c:\\program files\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.1\\arm
+  61              		.file 4 "SDI12.h"
+  62              		.file 5 "Generated_Source\\PSoC5/CyLib.h"
+  63              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+  64              		.section	.debug_info,"",%progbits
+  65              	.Ldebug_info0:
+  66 0000 06010000 		.4byte	0x106
+  67 0004 0400     		.2byte	0x4
+  68 0006 00000000 		.4byte	.Ldebug_abbrev0
+  69 000a 04       		.byte	0x4
+  70 000b 01       		.uleb128 0x1
+  71 000c 3A000000 		.4byte	.LASF18
+  72 0010 0C       		.byte	0xc
+  73 0011 2E000000 		.4byte	.LASF19
+  74 0015 26010000 		.4byte	.LASF20
+  75 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  76 001d 00000000 		.4byte	0
+  77 0021 00000000 		.4byte	.Ldebug_line0
+  78 0025 02       		.uleb128 0x2
+  79 0026 01       		.byte	0x1
+  80 0027 06       		.byte	0x6
+  81 0028 5D010000 		.4byte	.LASF0
+  82 002c 02       		.uleb128 0x2
+  83 002d 01       		.byte	0x1
+  84 002e 08       		.byte	0x8
+  85 002f F9000000 		.4byte	.LASF1
+  86 0033 02       		.uleb128 0x2
+  87 0034 02       		.byte	0x2
+  88 0035 05       		.byte	0x5
+  89 0036 1C010000 		.4byte	.LASF2
+  90 003a 02       		.uleb128 0x2
+ARM GAS  C:\Users\mame\AppData\Local\Temp\ccrMhnZz.s 			page 5
+
+
+  91 003b 02       		.byte	0x2
+  92 003c 07       		.byte	0x7
+  93 003d 0E000000 		.4byte	.LASF3
+  94 0041 03       		.uleb128 0x3
+  95 0042 75010000 		.4byte	.LASF9
+  96 0046 02       		.byte	0x2
+  97 0047 3F       		.byte	0x3f
+  98 0048 4C000000 		.4byte	0x4c
+  99 004c 02       		.uleb128 0x2
+ 100 004d 04       		.byte	0x4
+ 101 004e 05       		.byte	0x5
+ 102 004f 13010000 		.4byte	.LASF4
+ 103 0053 02       		.uleb128 0x2
+ 104 0054 04       		.byte	0x4
+ 105 0055 07       		.byte	0x7
+ 106 0056 D0000000 		.4byte	.LASF5
+ 107 005a 02       		.uleb128 0x2
+ 108 005b 08       		.byte	0x8
+ 109 005c 05       		.byte	0x5
+ 110 005d 00000000 		.4byte	.LASF6
+ 111 0061 02       		.uleb128 0x2
+ 112 0062 08       		.byte	0x8
+ 113 0063 07       		.byte	0x7
+ 114 0064 E2000000 		.4byte	.LASF7
+ 115 0068 04       		.uleb128 0x4
+ 116 0069 04       		.byte	0x4
+ 117 006a 05       		.byte	0x5
+ 118 006b 696E7400 		.ascii	"int\000"
+ 119 006f 02       		.uleb128 0x2
+ 120 0070 04       		.byte	0x4
+ 121 0071 07       		.byte	0x7
+ 122 0072 21000000 		.4byte	.LASF8
+ 123 0076 03       		.uleb128 0x3
+ 124 0077 8F010000 		.4byte	.LASF10
+ 125 007b 03       		.byte	0x3
+ 126 007c 2C       		.byte	0x2c
+ 127 007d 41000000 		.4byte	0x41
+ 128 0081 02       		.uleb128 0x2
+ 129 0082 04       		.byte	0x4
+ 130 0083 04       		.byte	0x4
+ 131 0084 7F010000 		.4byte	.LASF11
+ 132 0088 02       		.uleb128 0x2
+ 133 0089 08       		.byte	0x8
+ 134 008a 04       		.byte	0x4
+ 135 008b 0C010000 		.4byte	.LASF12
+ 136 008f 02       		.uleb128 0x2
+ 137 0090 01       		.byte	0x1
+ 138 0091 08       		.byte	0x8
+ 139 0092 07010000 		.4byte	.LASF13
+ 140 0096 02       		.uleb128 0x2
+ 141 0097 08       		.byte	0x8
+ 142 0098 04       		.byte	0x4
+ 143 0099 69010000 		.4byte	.LASF14
+ 144 009d 02       		.uleb128 0x2
+ 145 009e 04       		.byte	0x4
+ 146 009f 07       		.byte	0x7
+ 147 00a0 97010000 		.4byte	.LASF15
+ARM GAS  C:\Users\mame\AppData\Local\Temp\ccrMhnZz.s 			page 6
+
+
+ 148 00a4 05       		.uleb128 0x5
+ 149 00a5 35000000 		.4byte	.LASF21
+ 150 00a9 01       		.byte	0x1
+ 151 00aa 2B       		.byte	0x2b
+ 152 00ab 68000000 		.4byte	0x68
+ 153 00af 00000000 		.4byte	.LFB64
+ 154 00b3 14000000 		.4byte	.LFE64-.LFB64
+ 155 00b7 01       		.uleb128 0x1
+ 156 00b8 9C       		.byte	0x9c
+ 157 00b9 E2000000 		.4byte	0xe2
+ 158 00bd 06       		.uleb128 0x6
+ 159 00be 0A000000 		.4byte	.LVL0
+ 160 00c2 F3000000 		.4byte	0xf3
+ 161 00c6 D0000000 		.4byte	0xd0
+ 162 00ca 07       		.uleb128 0x7
+ 163 00cb 01       		.uleb128 0x1
+ 164 00cc 50       		.byte	0x50
+ 165 00cd 01       		.uleb128 0x1
+ 166 00ce 33       		.byte	0x33
+ 167 00cf 00       		.byte	0
+ 168 00d0 08       		.uleb128 0x8
+ 169 00d1 12000000 		.4byte	.LVL1
+ 170 00d5 FE000000 		.4byte	0xfe
+ 171 00d9 07       		.uleb128 0x7
+ 172 00da 01       		.uleb128 0x1
+ 173 00db 50       		.byte	0x50
+ 174 00dc 03       		.uleb128 0x3
+ 175 00dd 0A       		.byte	0xa
+ 176 00de 8813     		.2byte	0x1388
+ 177 00e0 00       		.byte	0
+ 178 00e1 00       		.byte	0
+ 179 00e2 09       		.uleb128 0x9
+ 180 00e3 50010000 		.4byte	.LASF22
+ 181 00e7 06       		.byte	0x6
+ 182 00e8 1207     		.2byte	0x712
+ 183 00ea EE000000 		.4byte	0xee
+ 184 00ee 0A       		.uleb128 0xa
+ 185 00ef 76000000 		.4byte	0x76
+ 186 00f3 0B       		.uleb128 0xb
+ 187 00f4 85010000 		.4byte	.LASF16
+ 188 00f8 85010000 		.4byte	.LASF16
+ 189 00fc 04       		.byte	0x4
+ 190 00fd 7A       		.byte	0x7a
+ 191 00fe 0B       		.uleb128 0xb
+ 192 00ff C8000000 		.4byte	.LASF17
+ 193 0103 C8000000 		.4byte	.LASF17
+ 194 0107 05       		.byte	0x5
+ 195 0108 76       		.byte	0x76
+ 196 0109 00       		.byte	0
+ 197              		.section	.debug_abbrev,"",%progbits
+ 198              	.Ldebug_abbrev0:
+ 199 0000 01       		.uleb128 0x1
+ 200 0001 11       		.uleb128 0x11
+ 201 0002 01       		.byte	0x1
+ 202 0003 25       		.uleb128 0x25
+ 203 0004 0E       		.uleb128 0xe
+ 204 0005 13       		.uleb128 0x13
+ARM GAS  C:\Users\mame\AppData\Local\Temp\ccrMhnZz.s 			page 7
+
+
+ 205 0006 0B       		.uleb128 0xb
+ 206 0007 03       		.uleb128 0x3
+ 207 0008 0E       		.uleb128 0xe
+ 208 0009 1B       		.uleb128 0x1b
+ 209 000a 0E       		.uleb128 0xe
+ 210 000b 55       		.uleb128 0x55
+ 211 000c 17       		.uleb128 0x17
+ 212 000d 11       		.uleb128 0x11
+ 213 000e 01       		.uleb128 0x1
+ 214 000f 10       		.uleb128 0x10
+ 215 0010 17       		.uleb128 0x17
+ 216 0011 00       		.byte	0
+ 217 0012 00       		.byte	0
+ 218 0013 02       		.uleb128 0x2
+ 219 0014 24       		.uleb128 0x24
+ 220 0015 00       		.byte	0
+ 221 0016 0B       		.uleb128 0xb
+ 222 0017 0B       		.uleb128 0xb
+ 223 0018 3E       		.uleb128 0x3e
+ 224 0019 0B       		.uleb128 0xb
+ 225 001a 03       		.uleb128 0x3
+ 226 001b 0E       		.uleb128 0xe
+ 227 001c 00       		.byte	0
+ 228 001d 00       		.byte	0
+ 229 001e 03       		.uleb128 0x3
+ 230 001f 16       		.uleb128 0x16
+ 231 0020 00       		.byte	0
+ 232 0021 03       		.uleb128 0x3
+ 233 0022 0E       		.uleb128 0xe
+ 234 0023 3A       		.uleb128 0x3a
+ 235 0024 0B       		.uleb128 0xb
+ 236 0025 3B       		.uleb128 0x3b
+ 237 0026 0B       		.uleb128 0xb
+ 238 0027 49       		.uleb128 0x49
+ 239 0028 13       		.uleb128 0x13
+ 240 0029 00       		.byte	0
+ 241 002a 00       		.byte	0
+ 242 002b 04       		.uleb128 0x4
+ 243 002c 24       		.uleb128 0x24
+ 244 002d 00       		.byte	0
+ 245 002e 0B       		.uleb128 0xb
+ 246 002f 0B       		.uleb128 0xb
+ 247 0030 3E       		.uleb128 0x3e
+ 248 0031 0B       		.uleb128 0xb
+ 249 0032 03       		.uleb128 0x3
+ 250 0033 08       		.uleb128 0x8
+ 251 0034 00       		.byte	0
+ 252 0035 00       		.byte	0
+ 253 0036 05       		.uleb128 0x5
+ 254 0037 2E       		.uleb128 0x2e
+ 255 0038 01       		.byte	0x1
+ 256 0039 3F       		.uleb128 0x3f
+ 257 003a 19       		.uleb128 0x19
+ 258 003b 03       		.uleb128 0x3
+ 259 003c 0E       		.uleb128 0xe
+ 260 003d 3A       		.uleb128 0x3a
+ 261 003e 0B       		.uleb128 0xb
+ARM GAS  C:\Users\mame\AppData\Local\Temp\ccrMhnZz.s 			page 8
+
+
+ 262 003f 3B       		.uleb128 0x3b
+ 263 0040 0B       		.uleb128 0xb
+ 264 0041 27       		.uleb128 0x27
+ 265 0042 19       		.uleb128 0x19
+ 266 0043 49       		.uleb128 0x49
+ 267 0044 13       		.uleb128 0x13
+ 268 0045 8701     		.uleb128 0x87
+ 269 0047 19       		.uleb128 0x19
+ 270 0048 11       		.uleb128 0x11
+ 271 0049 01       		.uleb128 0x1
+ 272 004a 12       		.uleb128 0x12
+ 273 004b 06       		.uleb128 0x6
+ 274 004c 40       		.uleb128 0x40
+ 275 004d 18       		.uleb128 0x18
+ 276 004e 9742     		.uleb128 0x2117
+ 277 0050 19       		.uleb128 0x19
+ 278 0051 01       		.uleb128 0x1
+ 279 0052 13       		.uleb128 0x13
+ 280 0053 00       		.byte	0
+ 281 0054 00       		.byte	0
+ 282 0055 06       		.uleb128 0x6
+ 283 0056 898201   		.uleb128 0x4109
+ 284 0059 01       		.byte	0x1
+ 285 005a 11       		.uleb128 0x11
+ 286 005b 01       		.uleb128 0x1
+ 287 005c 31       		.uleb128 0x31
+ 288 005d 13       		.uleb128 0x13
+ 289 005e 01       		.uleb128 0x1
+ 290 005f 13       		.uleb128 0x13
+ 291 0060 00       		.byte	0
+ 292 0061 00       		.byte	0
+ 293 0062 07       		.uleb128 0x7
+ 294 0063 8A8201   		.uleb128 0x410a
+ 295 0066 00       		.byte	0
+ 296 0067 02       		.uleb128 0x2
+ 297 0068 18       		.uleb128 0x18
+ 298 0069 9142     		.uleb128 0x2111
+ 299 006b 18       		.uleb128 0x18
+ 300 006c 00       		.byte	0
+ 301 006d 00       		.byte	0
+ 302 006e 08       		.uleb128 0x8
+ 303 006f 898201   		.uleb128 0x4109
+ 304 0072 01       		.byte	0x1
+ 305 0073 11       		.uleb128 0x11
+ 306 0074 01       		.uleb128 0x1
+ 307 0075 31       		.uleb128 0x31
+ 308 0076 13       		.uleb128 0x13
+ 309 0077 00       		.byte	0
+ 310 0078 00       		.byte	0
+ 311 0079 09       		.uleb128 0x9
+ 312 007a 34       		.uleb128 0x34
+ 313 007b 00       		.byte	0
+ 314 007c 03       		.uleb128 0x3
+ 315 007d 0E       		.uleb128 0xe
+ 316 007e 3A       		.uleb128 0x3a
+ 317 007f 0B       		.uleb128 0xb
+ 318 0080 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\mame\AppData\Local\Temp\ccrMhnZz.s 			page 9
+
+
+ 319 0081 05       		.uleb128 0x5
+ 320 0082 49       		.uleb128 0x49
+ 321 0083 13       		.uleb128 0x13
+ 322 0084 3F       		.uleb128 0x3f
+ 323 0085 19       		.uleb128 0x19
+ 324 0086 3C       		.uleb128 0x3c
+ 325 0087 19       		.uleb128 0x19
+ 326 0088 00       		.byte	0
+ 327 0089 00       		.byte	0
+ 328 008a 0A       		.uleb128 0xa
+ 329 008b 35       		.uleb128 0x35
+ 330 008c 00       		.byte	0
+ 331 008d 49       		.uleb128 0x49
+ 332 008e 13       		.uleb128 0x13
+ 333 008f 00       		.byte	0
+ 334 0090 00       		.byte	0
+ 335 0091 0B       		.uleb128 0xb
+ 336 0092 2E       		.uleb128 0x2e
+ 337 0093 00       		.byte	0
+ 338 0094 3F       		.uleb128 0x3f
+ 339 0095 19       		.uleb128 0x19
+ 340 0096 3C       		.uleb128 0x3c
+ 341 0097 19       		.uleb128 0x19
+ 342 0098 6E       		.uleb128 0x6e
+ 343 0099 0E       		.uleb128 0xe
+ 344 009a 03       		.uleb128 0x3
+ 345 009b 0E       		.uleb128 0xe
+ 346 009c 3A       		.uleb128 0x3a
+ 347 009d 0B       		.uleb128 0xb
+ 348 009e 3B       		.uleb128 0x3b
+ 349 009f 0B       		.uleb128 0xb
+ 350 00a0 00       		.byte	0
+ 351 00a1 00       		.byte	0
+ 352 00a2 00       		.byte	0
+ 353              		.section	.debug_aranges,"",%progbits
+ 354 0000 1C000000 		.4byte	0x1c
+ 355 0004 0200     		.2byte	0x2
+ 356 0006 00000000 		.4byte	.Ldebug_info0
+ 357 000a 04       		.byte	0x4
+ 358 000b 00       		.byte	0
+ 359 000c 0000     		.2byte	0
+ 360 000e 0000     		.2byte	0
+ 361 0010 00000000 		.4byte	.LFB64
+ 362 0014 14000000 		.4byte	.LFE64-.LFB64
+ 363 0018 00000000 		.4byte	0
+ 364 001c 00000000 		.4byte	0
+ 365              		.section	.debug_ranges,"",%progbits
+ 366              	.Ldebug_ranges0:
+ 367 0000 00000000 		.4byte	.LFB64
+ 368 0004 14000000 		.4byte	.LFE64
+ 369 0008 00000000 		.4byte	0
+ 370 000c 00000000 		.4byte	0
+ 371              		.section	.debug_line,"",%progbits
+ 372              	.Ldebug_line0:
+ 373 0000 6C010000 		.section	.debug_str,"MS",%progbits,1
+ 373      02004901 
+ 373      00000201 
+ARM GAS  C:\Users\mame\AppData\Local\Temp\ccrMhnZz.s 			page 10
+
+
+ 373      FB0E0D00 
+ 373      01010101 
+ 374              	.LASF6:
+ 375 0000 6C6F6E67 		.ascii	"long long int\000"
+ 375      206C6F6E 
+ 375      6720696E 
+ 375      7400
+ 376              	.LASF3:
+ 377 000e 73686F72 		.ascii	"short unsigned int\000"
+ 377      7420756E 
+ 377      7369676E 
+ 377      65642069 
+ 377      6E7400
+ 378              	.LASF8:
+ 379 0021 756E7369 		.ascii	"unsigned int\000"
+ 379      676E6564 
+ 379      20696E74 
+ 379      00
+ 380              	.LASF19:
+ 381 002e 6D61696E 		.ascii	"main.c\000"
+ 381      2E6300
+ 382              	.LASF21:
+ 383 0035 6D61696E 		.ascii	"main\000"
+ 383      00
+ 384              	.LASF18:
+ 385 003a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 385      43313120 
+ 385      352E342E 
+ 385      31203230 
+ 385      31363036 
+ 386 006d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 386      20726576 
+ 386      6973696F 
+ 386      6E203233 
+ 386      37373135 
+ 387 00a0 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 387      66756E63 
+ 387      74696F6E 
+ 387      2D736563 
+ 387      74696F6E 
+ 388              	.LASF17:
+ 389 00c8 43794465 		.ascii	"CyDelay\000"
+ 389      6C617900 
+ 390              	.LASF5:
+ 391 00d0 6C6F6E67 		.ascii	"long unsigned int\000"
+ 391      20756E73 
+ 391      69676E65 
+ 391      6420696E 
+ 391      7400
+ 392              	.LASF7:
+ 393 00e2 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 393      206C6F6E 
+ 393      6720756E 
+ 393      7369676E 
+ 393      65642069 
+ 394              	.LASF1:
+ 395 00f9 756E7369 		.ascii	"unsigned char\000"
+ARM GAS  C:\Users\mame\AppData\Local\Temp\ccrMhnZz.s 			page 11
+
+
+ 395      676E6564 
+ 395      20636861 
+ 395      7200
+ 396              	.LASF13:
+ 397 0107 63686172 		.ascii	"char\000"
+ 397      00
+ 398              	.LASF12:
+ 399 010c 646F7562 		.ascii	"double\000"
+ 399      6C6500
+ 400              	.LASF4:
+ 401 0113 6C6F6E67 		.ascii	"long int\000"
+ 401      20696E74 
+ 401      00
+ 402              	.LASF2:
+ 403 011c 73686F72 		.ascii	"short int\000"
+ 403      7420696E 
+ 403      7400
+ 404              	.LASF20:
+ 405 0126 433A5C55 		.ascii	"C:\\Users\\mame\\Documents\\psoc\\SDI-12.cydsn\000"
+ 405      73657273 
+ 405      5C6D616D 
+ 405      655C446F 
+ 405      63756D65 
+ 406              	.LASF22:
+ 407 0150 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 407      52784275 
+ 407      66666572 
+ 407      00
+ 408              	.LASF0:
+ 409 015d 7369676E 		.ascii	"signed char\000"
+ 409      65642063 
+ 409      68617200 
+ 410              	.LASF14:
+ 411 0169 6C6F6E67 		.ascii	"long double\000"
+ 411      20646F75 
+ 411      626C6500 
+ 412              	.LASF9:
+ 413 0175 5F5F696E 		.ascii	"__int32_t\000"
+ 413      7433325F 
+ 413      7400
+ 414              	.LASF11:
+ 415 017f 666C6F61 		.ascii	"float\000"
+ 415      7400
+ 416              	.LASF16:
+ 417 0185 7A69705F 		.ascii	"zip_SDI12\000"
+ 417      53444931 
+ 417      3200
+ 418              	.LASF10:
+ 419 018f 696E7433 		.ascii	"int32_t\000"
+ 419      325F7400 
+ 420              	.LASF15:
+ 421 0197 73697A65 		.ascii	"sizetype\000"
+ 421      74797065 
+ 421      00
+ 422              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

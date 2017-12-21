@@ -1,0 +1,2654 @@
+Loading plugins phase: Elapsed time ==> 0s.266ms
+<CYPRESSTAG name="CyDsfit arguments...">
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\mame\Documents\psoc\SDI-12.cydsn\SDI-12.cyprj -d CY8C5888LTI-LP097 -s C:\Users\mame\Documents\psoc\SDI-12.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+</CYPRESSTAG>
+<CYPRESSTAG name="Design elaboration results...">
+</CYPRESSTAG>
+Elaboration phase: Elapsed time ==> 1s.811ms
+<CYPRESSTAG name="HDL generation results...">
+</CYPRESSTAG>
+HDL generation phase: Elapsed time ==> 0s.056ms
+<CYPRESSTAG name="Synthesis results...">
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp Verilog Synthesis Compiler: Version 6.3 IR 41
+  -|               |-   Copyright (C) 1991-2001 Cypress Semiconductor
+   |_______________|
+     | | | | | | |
+
+======================================================================
+Compiling:  SDI-12.v
+Program  :   C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\bin\warp.exe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\mame\Documents\psoc\SDI-12.cydsn\SDI-12.cyprj -dcpsoc3 SDI-12.v -verilog
+======================================================================
+
+======================================================================
+Compiling:  SDI-12.v
+Program  :   C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\bin\warp.exe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\mame\Documents\psoc\SDI-12.cydsn\SDI-12.cyprj -dcpsoc3 SDI-12.v -verilog
+======================================================================
+
+======================================================================
+Compiling:  SDI-12.v
+Program  :   vlogfe
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\mame\Documents\psoc\SDI-12.cydsn\SDI-12.cyprj -dcpsoc3 -verilog SDI-12.v
+======================================================================
+
+vlogfe V6.3 IR 41:  Verilog parser
+Mon Dec 04 09:12:20 2017
+
+
+======================================================================
+Compiling:  SDI-12.v
+Program  :   vpp
+Options  :    -yv2 -q10 SDI-12.v
+======================================================================
+
+vpp V6.3 IR 41:  Verilog Pre-Processor
+Mon Dec 04 09:12:20 2017
+
+Flattening file 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
+Flattening file 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v'
+Flattening file 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cypress.v'
+Flattening file 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'
+Flattening file 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'
+Flattening file 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cypress.v'
+Flattening file 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v'
+Flattening file 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'
+
+vpp:  No errors.
+
+Library 'work' => directory 'lcpsoc3'
+General_symbol_table
+General_symbol_table
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Using control file 'SDI-12.ctl'.
+C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v (line 1113, col 55):  Note: Substituting module 'add_vv_vv' for '+'.
+C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v (line 1122, col 48):  Note: Substituting module 'cmp_vv_vv' for '<'.
+C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v (line 1122, col 77):  Note: Substituting module 'cmp_vv_vv' for '<'.
+C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v (line 1389, col 59):  Note: Substituting module 'cmp_vv_vv' for '<'.
+C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v (line 1424, col 61):  Note: Substituting module 'cmp_vv_vv' for '/='.
+C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v (line 1547, col 106):  Note: Substituting module 'cmp_vv_vv' for '<'.
+C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v (line 1603, col 68):  Note: Substituting module 'cmp_vv_vv' for '<'.
+C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v (line 1604, col 68):  Note: Substituting module 'cmp_vv_vv' for '<'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+
+vlogfe:  No errors.
+
+
+======================================================================
+Compiling:  SDI-12.v
+Program  :   tovif
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\mame\Documents\psoc\SDI-12.cydsn\SDI-12.cyprj -dcpsoc3 -verilog SDI-12.v
+======================================================================
+
+tovif V6.3 IR 41:  High-level synthesis
+Mon Dec 04 09:12:20 2017
+
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Users\mame\Documents\psoc\SDI-12.cydsn\codegentemp\SDI-12.ctl'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Users\mame\Documents\psoc\SDI-12.cydsn\codegentemp\SDI-12.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cypress.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\lcpsoc3\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mcompare.vif'.
+
+tovif:  No errors.
+
+
+======================================================================
+Compiling:  SDI-12.v
+Program  :   topld
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\mame\Documents\psoc\SDI-12.cydsn\SDI-12.cyprj -dcpsoc3 -verilog SDI-12.v
+======================================================================
+
+topld V6.3 IR 41:  Synthesis and optimization
+Mon Dec 04 09:12:21 2017
+
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\std.vhd'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cypress.vhd'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\work\cypress.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\lpmpkg.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
+Linking 'C:\Users\mame\Documents\psoc\SDI-12.cydsn\codegentemp\SDI-12.ctl'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
+Linking 'C:\Users\mame\Documents\psoc\SDI-12.cydsn\codegentemp\SDI-12.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_UART_v2_50\B_UART_v2_50.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cypress.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\lcpsoc3\stdlogic\mod_cnst.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\common\stdlogic\mcompare.vif'.
+Linking 'C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+    User names
+	\SDI12_UART:BUART:reset_sr\
+	Net_8
+	\SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:b_1\
+	\SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:b_0\
+	\SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:gta_0\
+	\SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:gta_0\
+	Net_3
+	\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_0\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:albi_1\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:agbi_1\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:lt_0\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:gt_0\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:lti_0\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:gti_0\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:albi_0\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:agbi_0\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:xeq\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:xlt\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:xlte\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:xgt\
+	\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:xgte\
+	\SDI12_UART:BUART:sRX:MODULE_5:lt\
+	\SDI12_UART:BUART:sRX:MODULE_5:eq\
+	\SDI12_UART:BUART:sRX:MODULE_5:gt\
+	\SDI12_UART:BUART:sRX:MODULE_5:gte\
+	\SDI12_UART:BUART:sRX:MODULE_5:lte\
+	Net_26
+	Net_27
+	Net_28
+	Net_30
+	Net_31
+	Net_32
+	Net_33
+
+
+Deleted 33 User equations/components.
+Deleted 0 Synthesized equations/components.
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+Aliasing \SDI12_UART:BUART:HalfDuplexSend\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:FinalParityType_1\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:FinalParityType_0\ to one
+Aliasing \SDI12_UART:BUART:FinalAddrMode_2\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:FinalAddrMode_1\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:FinalAddrMode_0\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:tx_ctrl_mark\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing zero to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:tx_status_6\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:tx_status_5\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:tx_status_4\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:rx_count7_bit8_wire\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_0\ to one
+Aliasing \SDI12_UART:BUART:sRX:s23Poll:MODIN2_1\ to \SDI12_UART:BUART:sRX:s23Poll:MODIN1_1\
+Aliasing \SDI12_UART:BUART:sRX:s23Poll:MODIN2_0\ to \SDI12_UART:BUART:sRX:s23Poll:MODIN1_0\
+Aliasing \SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:newb_1\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:newb_0\ to one
+Aliasing \SDI12_UART:BUART:sRX:s23Poll:MODIN3_1\ to \SDI12_UART:BUART:sRX:s23Poll:MODIN1_1\
+Aliasing \SDI12_UART:BUART:sRX:s23Poll:MODIN3_0\ to \SDI12_UART:BUART:sRX:s23Poll:MODIN1_0\
+Aliasing \SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:newb_1\ to one
+Aliasing \SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:newb_0\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:rx_status_1\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newa_6\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newa_5\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newa_4\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_6\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_5\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_4\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_3\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_2\ to one
+Aliasing \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_1\ to one
+Aliasing \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_0\ to one
+Aliasing \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:aeqb_0\ to one
+Aliasing \SDI12_control_reg:clk\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_control_reg:rst\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing tmpOE__SDI12_Power_net_0 to one
+Aliasing tmpOE__SDI12_Data_net_0 to one
+Aliasing tmpOE__LED_net_0 to one
+Aliasing \SDI12_UART:BUART:reset_reg\\D\ to \SDI12_UART:BUART:tx_hd_send_break\
+Aliasing \SDI12_UART:BUART:rx_break_status\\D\ to \SDI12_UART:BUART:tx_hd_send_break\
+Removing Lhs of wire \SDI12_UART:Net_61\[2] = \SDI12_UART:Net_9\[1]
+Removing Lhs of wire \SDI12_UART:BUART:HalfDuplexSend\[8] = \SDI12_UART:BUART:tx_hd_send_break\[7]
+Removing Lhs of wire \SDI12_UART:BUART:FinalParityType_1\[9] = \SDI12_UART:BUART:tx_hd_send_break\[7]
+Removing Lhs of wire \SDI12_UART:BUART:FinalParityType_0\[10] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:FinalAddrMode_2\[11] = \SDI12_UART:BUART:tx_hd_send_break\[7]
+Removing Lhs of wire \SDI12_UART:BUART:FinalAddrMode_1\[12] = \SDI12_UART:BUART:tx_hd_send_break\[7]
+Removing Lhs of wire \SDI12_UART:BUART:FinalAddrMode_0\[13] = \SDI12_UART:BUART:tx_hd_send_break\[7]
+Removing Lhs of wire \SDI12_UART:BUART:tx_ctrl_mark\[14] = \SDI12_UART:BUART:tx_hd_send_break\[7]
+Removing Rhs of wire Net_9[21] = \SDI12_UART:BUART:rx_interrupt_out\[22]
+Removing Rhs of wire \SDI12_UART:BUART:tx_bitclk_enable_pre\[26] = \SDI12_UART:BUART:tx_bitclk_dp\[63]
+Removing Rhs of wire zero[27] = \SDI12_UART:BUART:tx_hd_send_break\[7]
+Removing Lhs of wire \SDI12_UART:BUART:tx_counter_tc\[73] = \SDI12_UART:BUART:tx_counter_dp\[64]
+Removing Lhs of wire \SDI12_UART:BUART:tx_status_6\[74] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:tx_status_5\[75] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:tx_status_4\[76] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:tx_status_1\[78] = \SDI12_UART:BUART:tx_fifo_empty\[41]
+Removing Lhs of wire \SDI12_UART:BUART:tx_status_3\[80] = \SDI12_UART:BUART:tx_fifo_notfull\[40]
+Removing Lhs of wire \SDI12_UART:BUART:rx_count7_bit8_wire\[140] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:add_vv_vv_MODGEN_1_1\[148] = \SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:s_1\[159]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:add_vv_vv_MODGEN_1_0\[150] = \SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:s_0\[160]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:cmp_vv_vv_MODGEN_2\[151] = \SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:lta_0\[176]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:cmp_vv_vv_MODGEN_3\[152] = \SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:lta_0\[190]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:a_1\[153] = \SDI12_UART:BUART:sRX:s23Poll:MODIN1_1\[154]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODIN1_1\[154] = \SDI12_UART:BUART:pollcount_1\[146]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:a_0\[155] = \SDI12_UART:BUART:sRX:s23Poll:MODIN1_0\[156]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODIN1_0\[156] = \SDI12_UART:BUART:pollcount_0\[149]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_0\[162] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_0\[163] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:newa_1\[164] = \SDI12_UART:BUART:pollcount_1\[146]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODIN2_1\[165] = \SDI12_UART:BUART:pollcount_1\[146]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:newa_0\[166] = \SDI12_UART:BUART:pollcount_0\[149]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODIN2_0\[167] = \SDI12_UART:BUART:pollcount_0\[149]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:newb_1\[168] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:newb_0\[169] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:dataa_1\[170] = \SDI12_UART:BUART:pollcount_1\[146]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:dataa_0\[171] = \SDI12_UART:BUART:pollcount_0\[149]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:datab_1\[172] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:datab_0\[173] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:newa_1\[178] = \SDI12_UART:BUART:pollcount_1\[146]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODIN3_1\[179] = \SDI12_UART:BUART:pollcount_1\[146]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:newa_0\[180] = \SDI12_UART:BUART:pollcount_0\[149]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODIN3_0\[181] = \SDI12_UART:BUART:pollcount_0\[149]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:newb_1\[182] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:newb_0\[183] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:dataa_1\[184] = \SDI12_UART:BUART:pollcount_1\[146]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:dataa_0\[185] = \SDI12_UART:BUART:pollcount_0\[149]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:datab_1\[186] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:datab_0\[187] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:rx_status_1\[194] = zero[27]
+Removing Rhs of wire \SDI12_UART:BUART:rx_status_2\[195] = \SDI12_UART:BUART:rx_parity_error_status\[196]
+Removing Rhs of wire \SDI12_UART:BUART:rx_status_3\[197] = \SDI12_UART:BUART:rx_stop_bit_error\[198]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:cmp_vv_vv_MODGEN_4\[208] = \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_0\[257]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:cmp_vv_vv_MODGEN_5\[212] = \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:xneq\[279]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newa_6\[213] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newa_5\[214] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newa_4\[215] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newa_3\[216] = \SDI12_UART:BUART:sRX:MODIN4_6\[217]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODIN4_6\[217] = \SDI12_UART:BUART:rx_count_6\[135]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newa_2\[218] = \SDI12_UART:BUART:sRX:MODIN4_5\[219]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODIN4_5\[219] = \SDI12_UART:BUART:rx_count_5\[136]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newa_1\[220] = \SDI12_UART:BUART:sRX:MODIN4_4\[221]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODIN4_4\[221] = \SDI12_UART:BUART:rx_count_4\[137]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newa_0\[222] = \SDI12_UART:BUART:sRX:MODIN4_3\[223]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODIN4_3\[223] = \SDI12_UART:BUART:rx_count_3\[138]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_6\[224] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_5\[225] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_4\[226] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_3\[227] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_2\[228] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_1\[229] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:newb_0\[230] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:dataa_6\[231] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:dataa_5\[232] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:dataa_4\[233] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:dataa_3\[234] = \SDI12_UART:BUART:rx_count_6\[135]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:dataa_2\[235] = \SDI12_UART:BUART:rx_count_5\[136]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:dataa_1\[236] = \SDI12_UART:BUART:rx_count_4\[137]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:dataa_0\[237] = \SDI12_UART:BUART:rx_count_3\[138]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:datab_6\[238] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:datab_5\[239] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:datab_4\[240] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:datab_3\[241] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:datab_2\[242] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:datab_1\[243] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_4:g2:a0:datab_0\[244] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:newa_0\[259] = \SDI12_UART:BUART:rx_postpoll\[94]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:newb_0\[260] = \SDI12_UART:BUART:rx_parity_bit\[211]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:dataa_0\[261] = \SDI12_UART:BUART:rx_postpoll\[94]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:datab_0\[262] = \SDI12_UART:BUART:rx_parity_bit\[211]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:a_0\[263] = \SDI12_UART:BUART:rx_postpoll\[94]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:b_0\[264] = \SDI12_UART:BUART:rx_parity_bit\[211]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:aeqb_0\[266] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:eq_0\[267] = \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:xnor_array_0\[265]
+Removing Lhs of wire \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:eqi_0\[268] = \SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:xnor_array_0\[265]
+Removing Lhs of wire \SDI12_control_reg:clk\[289] = zero[27]
+Removing Lhs of wire \SDI12_control_reg:rst\[290] = zero[27]
+Removing Rhs of wire Net_37[291] = \SDI12_control_reg:control_out_0\[292]
+Removing Rhs of wire Net_37[291] = \SDI12_control_reg:control_0\[315]
+Removing Lhs of wire tmpOE__SDI12_Power_net_0[319] = one[4]
+Removing Lhs of wire tmpOE__SDI12_Data_net_0[325] = one[4]
+Removing Lhs of wire tmpOE__LED_net_0[332] = one[4]
+Removing Lhs of wire \SDI12_UART:BUART:reset_reg\\D\[337] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:rx_bitclk\\D\[352] = \SDI12_UART:BUART:rx_bitclk_pre\[129]
+Removing Lhs of wire \SDI12_UART:BUART:rx_break_status\\D\[362] = zero[27]
+
+------------------------------------------------------
+Aliased 0 equations, 104 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Substituting virtuals - pass 1:
+
+Note:  Expanding virtual equation for 'one' (cost = 0):
+one <=  ('1') ;
+
+Note:  Expanding virtual equation for 'zero' (cost = 0):
+zero <=  ('0') ;
+
+Note:  Expanding virtual equation for 'Net_18' (cost = 0):
+Net_18 <= (not \SDI12_UART:BUART:txn\);
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:rx_addressmatch\' (cost = 0):
+\SDI12_UART:BUART:rx_addressmatch\ <= (\SDI12_UART:BUART:rx_addressmatch2\
+	OR \SDI12_UART:BUART:rx_addressmatch1\);
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:rx_bitclk_pre\' (cost = 1):
+\SDI12_UART:BUART:rx_bitclk_pre\ <= ((not \SDI12_UART:BUART:rx_count_2\ and not \SDI12_UART:BUART:rx_count_1\ and not \SDI12_UART:BUART:rx_count_0\));
+
+Note:  Expanding virtual equation for 'Net_46' (cost = 0):
+Net_46 <= (not Net_50);
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:rx_bitclk_pre16x\' (cost = 0):
+\SDI12_UART:BUART:rx_bitclk_pre16x\ <= ((not \SDI12_UART:BUART:rx_count_2\ and \SDI12_UART:BUART:rx_count_1\ and \SDI12_UART:BUART:rx_count_0\));
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:rx_poll_bit1\' (cost = 1):
+\SDI12_UART:BUART:rx_poll_bit1\ <= ((not \SDI12_UART:BUART:rx_count_2\ and not \SDI12_UART:BUART:rx_count_1\ and \SDI12_UART:BUART:rx_count_0\));
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:rx_poll_bit2\' (cost = 1):
+\SDI12_UART:BUART:rx_poll_bit2\ <= ((not \SDI12_UART:BUART:rx_count_2\ and not \SDI12_UART:BUART:rx_count_1\ and not \SDI12_UART:BUART:rx_count_0\));
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:pollingrange\' (cost = 4):
+\SDI12_UART:BUART:pollingrange\ <= ((not \SDI12_UART:BUART:rx_count_2\ and not \SDI12_UART:BUART:rx_count_1\));
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_1\' (cost = 0):
+\SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_1\ <= (\SDI12_UART:BUART:pollcount_0\);
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:s_0\' (cost = 0):
+\SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:s_0\ <= (not \SDI12_UART:BUART:pollcount_0\);
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:lta_1\' (cost = 0):
+\SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:lta_1\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:gta_1\' (cost = 0):
+\SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:gta_1\ <= (\SDI12_UART:BUART:pollcount_1\);
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:lta_1\' (cost = 0):
+\SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:lta_1\ <= (not \SDI12_UART:BUART:pollcount_1\);
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:gta_1\' (cost = 0):
+\SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:gta_1\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_6\' (cost = 0):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_6\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_6\' (cost = 0):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_6\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_5\' (cost = 0):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_5\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_5\' (cost = 0):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_5\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_4\' (cost = 0):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_4\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_4\' (cost = 0):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_4\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_3\' (cost = 0):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_3\ <=  ('0') ;
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_3\' (cost = 0):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_3\ <= (\SDI12_UART:BUART:rx_count_6\);
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_2\' (cost = 1):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_2\ <= ((not \SDI12_UART:BUART:rx_count_6\ and not \SDI12_UART:BUART:rx_count_5\));
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_2\' (cost = 0):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_2\ <= (\SDI12_UART:BUART:rx_count_6\);
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_1\' (cost = 2):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_1\ <= ((not \SDI12_UART:BUART:rx_count_6\ and not \SDI12_UART:BUART:rx_count_4\)
+	OR (not \SDI12_UART:BUART:rx_count_6\ and not \SDI12_UART:BUART:rx_count_5\));
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_1\' (cost = 0):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:gta_1\ <= (\SDI12_UART:BUART:rx_count_6\);
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_0\' (cost = 5):
+\SDI12_UART:BUART:sRX:MODULE_4:g2:a0:lta_0\ <= ((not \SDI12_UART:BUART:rx_count_6\ and not \SDI12_UART:BUART:rx_count_3\)
+	OR (not \SDI12_UART:BUART:rx_count_6\ and not \SDI12_UART:BUART:rx_count_4\)
+	OR (not \SDI12_UART:BUART:rx_count_6\ and not \SDI12_UART:BUART:rx_count_5\));
+
+Note:  Expanding virtual equation for 'Net_40' (cost = 0):
+Net_40 <= (\SDI12_UART:BUART:txn\);
+
+
+Substituting virtuals - pass 2:
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:lta_0\' (cost = 4):
+\SDI12_UART:BUART:sRX:s23Poll:MODULE_2:g2:a0:lta_0\ <= ((not \SDI12_UART:BUART:pollcount_1\ and not \SDI12_UART:BUART:pollcount_0\));
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:lta_0\' (cost = 0):
+\SDI12_UART:BUART:sRX:s23Poll:MODULE_3:g2:a0:lta_0\ <= (not \SDI12_UART:BUART:pollcount_1\);
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:s_1\' (cost = 2):
+\SDI12_UART:BUART:sRX:s23Poll:MODULE_1:g2:a0:s_1\ <= ((not \SDI12_UART:BUART:pollcount_0\ and \SDI12_UART:BUART:pollcount_1\)
+	OR (not \SDI12_UART:BUART:pollcount_1\ and \SDI12_UART:BUART:pollcount_0\));
+
+
+Substituting virtuals - pass 3:
+
+Note:  Virtual signal \SDI12_UART:BUART:rx_postpoll\ with ( cost: 112 or cost_inv: 2)  > 90 or with size: 2 > 102 has been made a (soft) node.
+\SDI12_UART:BUART:rx_postpoll\ <= (\SDI12_UART:BUART:pollcount_1\
+	OR (not Net_50 and \SDI12_UART:BUART:pollcount_0\));
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:xnor_array_0\' (cost = 2):
+\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:xnor_array_0\ <= ((not \SDI12_UART:BUART:rx_postpoll\ and not \SDI12_UART:BUART:rx_parity_bit\)
+	OR (\SDI12_UART:BUART:rx_postpoll\ and \SDI12_UART:BUART:rx_parity_bit\));
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:aeqb_1\' (cost = 2):
+\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:gx:u0:aeqb_1\ <= ((not \SDI12_UART:BUART:rx_postpoll\ and not \SDI12_UART:BUART:rx_parity_bit\)
+	OR (\SDI12_UART:BUART:rx_postpoll\ and \SDI12_UART:BUART:rx_parity_bit\));
+
+Note:  Expanding virtual equation for '\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:xneq\' (cost = 2):
+\SDI12_UART:BUART:sRX:MODULE_5:g1:a0:xneq\ <= ((not \SDI12_UART:BUART:rx_parity_bit\ and \SDI12_UART:BUART:rx_postpoll\)
+	OR (not \SDI12_UART:BUART:rx_postpoll\ and \SDI12_UART:BUART:rx_parity_bit\));
+
+
+Substituting virtuals - pass 4:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 36 signals.
+	Turned 1 signals into soft nodes.
+	Maximum default expansion cost was set at 3.
+----------------------------------------------------------
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+Aliasing \SDI12_UART:BUART:rx_status_0\ to zero
+Aliasing \SDI12_UART:BUART:rx_status_6\ to zero
+Aliasing \SDI12_UART:BUART:rx_markspace_status\\D\ to zero
+Aliasing \SDI12_UART:BUART:rx_addr_match_status\\D\ to zero
+Removing Rhs of wire \SDI12_UART:BUART:rx_bitclk_enable\[93] = \SDI12_UART:BUART:rx_bitclk\[141]
+Removing Lhs of wire \SDI12_UART:BUART:rx_status_0\[192] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:rx_status_6\[201] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:tx_ctrl_mark_last\\D\[344] = \SDI12_UART:BUART:tx_ctrl_mark_last\[84]
+Removing Lhs of wire \SDI12_UART:BUART:rx_markspace_status\\D\[356] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:rx_addr_match_status\\D\[359] = zero[27]
+Removing Lhs of wire \SDI12_UART:BUART:rx_markspace_pre\\D\[360] = \SDI12_UART:BUART:rx_markspace_pre\[205]
+
+------------------------------------------------------
+Aliased 0 equations, 7 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+Eliminating unused logic - pass 1:
+
+
+Eliminating unused logic - pass 2:
+
+
+Substituting virtuals - pass 1:
+
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 0 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 3.
+----------------------------------------------------------
+
+topld:  No errors.
+
+CYPRESS_DIR    : C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp
+Warp Program   : C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\warp\bin\warp.exe
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\mame\Documents\psoc\SDI-12.cydsn\SDI-12.cyprj -dcpsoc3 SDI-12.v -verilog
+</CYPRESSTAG>
+Warp synthesis phase: Elapsed time ==> 0s.680ms
+<CYPRESSTAG name="Fitter results...">
+<CYPRESSTAG name="Fitter startup details...">
+cyp3fit: V4.1.0.3210, Family: PSoC3, Started at: Monday, 04 December 2017 09:12:21
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\mame\Documents\psoc\SDI-12.cydsn\SDI-12.cyprj -d CY8C5888LTI-LP097 SDI-12.v -verilog
+</CYPRESSTAG>
+<CYPRESSTAG name="Design parsing">
+Design parsing phase: Elapsed time ==> 0s.013ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Tech Mapping">
+<CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
+    Converted constant MacroCell: \SDI12_UART:BUART:reset_reg\ from registered to combinatorial
+    Converted constant MacroCell: \SDI12_UART:BUART:rx_markspace_status\ from registered to combinatorial
+    Converted constant MacroCell: \SDI12_UART:BUART:rx_addr_match_status\ from registered to combinatorial
+    Converted constant MacroCell: \SDI12_UART:BUART:rx_break_status\ from registered to combinatorial
+<CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
+    Digital Clock 0: Automatic-assigning  clock 'SDI12_UART_IntClock'. Fanout=1, Signal=\SDI12_UART:Net_9\
+</CYPRESSTAG>
+
+Removing unused cells resulting from optimization
+Done removing unused cells.
+<CYPRESSTAG name="UDB Clock/Enable Remapping Results">
+    UDB Clk/Enable \SDI12_UART:BUART:ClkSync\: with output requested to be synchronous
+        ClockIn: SDI12_UART_IntClock was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: SDI12_UART_IntClock, EnableOut: Constant 1
+</CYPRESSTAG>
+
+Removing unused cells resulting from optimization
+Done removing unused cells.
+<CYPRESSTAG name="Duplicate Macrocell detection">
+</CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Duplicate Macrocell detection">
+
+Removing duplicate macrocells
+    Removing \SDI12_UART:BUART:rx_address_detected\, Duplicate of \SDI12_UART:BUART:tx_ctrl_mark_last\ 
+    MacroCell: Name=\SDI12_UART:BUART:rx_address_detected\, Mode=(T-Register)
+        Total # of inputs        : 0
+        Total # of product terms : 0
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 0 pterms
+        (
+            0
+        );
+        Output = \SDI12_UART:BUART:rx_address_detected\ (fanout=0)
+
+    Removing \SDI12_UART:BUART:rx_markspace_pre\, Duplicate of \SDI12_UART:BUART:tx_ctrl_mark_last\ 
+    MacroCell: Name=\SDI12_UART:BUART:rx_markspace_pre\, Mode=(T-Register)
+        Total # of inputs        : 0
+        Total # of product terms : 0
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 0 pterms
+        (
+            0
+        );
+        Output = \SDI12_UART:BUART:rx_markspace_pre\ (fanout=0)
+
+    Removing \SDI12_UART:BUART:rx_state_1\, Duplicate of \SDI12_UART:BUART:tx_ctrl_mark_last\ 
+    MacroCell: Name=\SDI12_UART:BUART:rx_state_1\, Mode=(T-Register)
+        Total # of inputs        : 0
+        Total # of product terms : 0
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 0 pterms
+        (
+            0
+        );
+        Output = \SDI12_UART:BUART:rx_state_1\ (fanout=11)
+
+    Removing \SDI12_UART:BUART:tx_mark\, Duplicate of \SDI12_UART:BUART:tx_ctrl_mark_last\ 
+    MacroCell: Name=\SDI12_UART:BUART:tx_mark\, Mode=(T-Register)
+        Total # of inputs        : 0
+        Total # of product terms : 0
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 0 pterms
+        (
+            0
+        );
+        Output = \SDI12_UART:BUART:tx_mark\ (fanout=0)
+
+End removing duplicate macrocells: used 1 pass
+</CYPRESSTAG>
+<CYPRESSTAG name="Design Equations" icon="FILE_RPT_EQUATION">
+
+------------------------------------------------------------
+Design Equations
+------------------------------------------------------------
+    <CYPRESSTAG name="Pin listing">
+
+    ------------------------------------------------------------
+    Pin listing
+    ------------------------------------------------------------
+
+    Pin : Name = SDI12_Power(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => SDI12_Power(0)__PA ,
+            pad => SDI12_Power(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = SDI12_Data(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: RES_PULL_DOWN
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL, ROUTABLE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => SDI12_Data(0)__PA ,
+            pin_input => Net_45 ,
+            fb => Net_50 ,
+            pad => SDI12_Data(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = LED(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => LED(0)__PA ,
+            pad => LED(0)_PAD );
+        Properties:
+        {
+        }
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
+
+    ------------------------------------------------------------
+    Macrocell listing
+    ------------------------------------------------------------
+
+    MacroCell: Name=\SDI12_UART:BUART:counter_load_not\, Mode=(Combinatorial)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        !(
+              !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\
+            + !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_state_2\
+        );
+        Output = \SDI12_UART:BUART:counter_load_not\ (fanout=1)
+
+    MacroCell: Name=\SDI12_UART:BUART:tx_status_0\, Mode=(Combinatorial)
+        Total # of inputs        : 5
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\ * 
+              \SDI12_UART:BUART:tx_fifo_empty\ * 
+              \SDI12_UART:BUART:tx_state_2\
+        );
+        Output = \SDI12_UART:BUART:tx_status_0\ (fanout=1)
+
+    MacroCell: Name=\SDI12_UART:BUART:tx_status_2\, Mode=(Combinatorial)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:tx_fifo_notfull\
+        );
+        Output = \SDI12_UART:BUART:tx_status_2\ (fanout=1)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_counter_load\, Mode=(Combinatorial)
+        Total # of inputs        : 4
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\
+        );
+        Output = \SDI12_UART:BUART:rx_counter_load\ (fanout=1)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_postpoll\, Mode=(Combinatorial)
+        Total # of inputs        : 3
+        Total # of product terms : 2
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \SDI12_UART:BUART:pollcount_1\
+            + \SDI12_UART:BUART:pollcount_0\ * !Net_50
+        );
+        Output = \SDI12_UART:BUART:rx_postpoll\ (fanout=5)
+        Properties               : 
+        {
+            soft = 1
+        }
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_status_4\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \SDI12_UART:BUART:rx_load_fifo\ * 
+              \SDI12_UART:BUART:rx_fifofull\
+        );
+        Output = \SDI12_UART:BUART:rx_status_4\ (fanout=1)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_status_5\, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \SDI12_UART:BUART:rx_fifonotempty\ * 
+              \SDI12_UART:BUART:rx_state_stop1_reg\
+        );
+        Output = \SDI12_UART:BUART:rx_status_5\ (fanout=1)
+
+    MacroCell: Name=Net_45, Mode=(Combinatorial)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        !(
+              !\SDI12_UART:BUART:txn\ * !Net_37
+        );
+        Output = Net_45 (fanout=1)
+
+    MacroCell: Name=\SDI12_UART:BUART:txn\, Mode=(D-Register)
+        Total # of inputs        : 8
+        Total # of product terms : 7
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 7 pterms
+        (
+              !\SDI12_UART:BUART:txn\ * \SDI12_UART:BUART:tx_state_1\ * 
+              !\SDI12_UART:BUART:tx_state_0\ * !\SDI12_UART:BUART:tx_state_2\ * 
+              \SDI12_UART:BUART:tx_counter_dp\ * \SDI12_UART:BUART:tx_bitclk\ * 
+              \SDI12_UART:BUART:tx_parity_bit\
+            + \SDI12_UART:BUART:txn\ * \SDI12_UART:BUART:tx_state_1\ * 
+              !\SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_counter_dp\ * 
+              !\SDI12_UART:BUART:tx_parity_bit\
+            + \SDI12_UART:BUART:txn\ * \SDI12_UART:BUART:tx_state_1\ * 
+              !\SDI12_UART:BUART:tx_bitclk\
+            + \SDI12_UART:BUART:txn\ * \SDI12_UART:BUART:tx_state_2\
+            + !\SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_shift_out\ * 
+              !\SDI12_UART:BUART:tx_state_2\
+            + !\SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_state_2\ * !\SDI12_UART:BUART:tx_bitclk\
+            + \SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_shift_out\ * 
+              !\SDI12_UART:BUART:tx_state_2\ * 
+              !\SDI12_UART:BUART:tx_counter_dp\ * 
+              \SDI12_UART:BUART:tx_bitclk\
+        );
+        Output = \SDI12_UART:BUART:txn\ (fanout=3)
+
+    MacroCell: Name=\SDI12_UART:BUART:tx_state_1\, Mode=(T-Register)
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\ * 
+              \SDI12_UART:BUART:tx_state_2\
+            + \SDI12_UART:BUART:tx_state_0\ * !\SDI12_UART:BUART:tx_state_2\ * 
+              \SDI12_UART:BUART:tx_bitclk\
+        );
+        Output = \SDI12_UART:BUART:tx_state_1\ (fanout=9)
+
+    MacroCell: Name=\SDI12_UART:BUART:tx_state_0\, Mode=(T-Register)
+        Total # of inputs        : 7
+        Total # of product terms : 5
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 5 pterms
+        (
+              !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\ * 
+              !\SDI12_UART:BUART:tx_fifo_empty\
+            + !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_fifo_empty\ * 
+              !\SDI12_UART:BUART:tx_state_2\
+            + \SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\ * 
+              \SDI12_UART:BUART:tx_fifo_empty\ * 
+              \SDI12_UART:BUART:tx_state_2\
+            + \SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_2\ * 
+              \SDI12_UART:BUART:tx_counter_dp\ * \SDI12_UART:BUART:tx_bitclk\
+            + \SDI12_UART:BUART:tx_state_0\ * !\SDI12_UART:BUART:tx_state_2\ * 
+              \SDI12_UART:BUART:tx_bitclk\
+        );
+        Output = \SDI12_UART:BUART:tx_state_0\ (fanout=9)
+
+    MacroCell: Name=\SDI12_UART:BUART:tx_state_2\, Mode=(T-Register)
+        Total # of inputs        : 5
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\ * 
+              \SDI12_UART:BUART:tx_state_2\
+            + \SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\ * 
+              \SDI12_UART:BUART:tx_state_2\
+            + \SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_state_2\ * \SDI12_UART:BUART:tx_bitclk\
+        );
+        Output = \SDI12_UART:BUART:tx_state_2\ (fanout=8)
+
+    MacroCell: Name=\SDI12_UART:BUART:tx_bitclk\, Mode=(D-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        !(
+              !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_state_2\
+            + !\SDI12_UART:BUART:tx_bitclk_enable_pre\
+        );
+        Output = \SDI12_UART:BUART:tx_bitclk\ (fanout=5)
+
+    MacroCell: Name=\SDI12_UART:BUART:tx_ctrl_mark_last\, Mode=(T-Register)
+        Total # of inputs        : 0
+        Total # of product terms : 0
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 0 pterms
+        (
+            0
+        );
+        Output = \SDI12_UART:BUART:tx_ctrl_mark_last\ (fanout=11)
+
+    MacroCell: Name=\SDI12_UART:BUART:tx_parity_bit\, Mode=(T-Register)
+        Total # of inputs        : 6
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\SDI12_UART:BUART:txn\ * \SDI12_UART:BUART:tx_state_1\ * 
+              !\SDI12_UART:BUART:tx_state_0\ * !\SDI12_UART:BUART:tx_state_2\ * 
+              \SDI12_UART:BUART:tx_bitclk\
+            + !\SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_state_2\ * \SDI12_UART:BUART:tx_bitclk\ * 
+              \SDI12_UART:BUART:tx_parity_bit\
+        );
+        Output = \SDI12_UART:BUART:tx_parity_bit\ (fanout=2)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_state_0\, Mode=(T-Register)
+        Total # of inputs        : 10
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              !\SDI12_UART:BUART:rx_postpoll\ * 
+              !\SDI12_UART:BUART:rx_state_3\ * \SDI12_UART:BUART:rx_state_2\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * !\SDI12_UART:BUART:rx_count_6\ * 
+              !\SDI12_UART:BUART:rx_count_5\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * !\SDI12_UART:BUART:rx_count_6\ * 
+              !\SDI12_UART:BUART:rx_count_4\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * !\SDI12_UART:BUART:rx_count_6\ * 
+              !\SDI12_UART:BUART:rx_count_3\
+        );
+        Output = \SDI12_UART:BUART:rx_state_0\ (fanout=11)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_load_fifo\, Mode=(D-Register)
+        Total # of inputs        : 5
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_state_3\ * !\SDI12_UART:BUART:rx_state_2\
+        );
+        Output = \SDI12_UART:BUART:rx_load_fifo\ (fanout=2)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_state_3\, Mode=(T-Register)
+        Total # of inputs        : 9
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_state_3\ * \SDI12_UART:BUART:rx_state_2\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * !\SDI12_UART:BUART:rx_count_6\ * 
+              !\SDI12_UART:BUART:rx_count_5\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * !\SDI12_UART:BUART:rx_count_6\ * 
+              !\SDI12_UART:BUART:rx_count_4\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * !\SDI12_UART:BUART:rx_count_6\ * 
+              !\SDI12_UART:BUART:rx_count_3\
+        );
+        Output = \SDI12_UART:BUART:rx_state_3\ (fanout=10)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_state_2\, Mode=(T-Register)
+        Total # of inputs        : 7
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_state_3\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_state_2\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * \SDI12_UART:BUART:rx_last\ * 
+              Net_50
+        );
+        Output = \SDI12_UART:BUART:rx_state_2\ (fanout=10)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_bitclk_enable\, Mode=(D-Register)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:rx_count_2\ * !\SDI12_UART:BUART:rx_count_1\ * 
+              !\SDI12_UART:BUART:rx_count_0\
+        );
+        Output = \SDI12_UART:BUART:rx_bitclk_enable\ (fanout=9)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_state_stop1_reg\, Mode=(D-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        !(
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * \SDI12_UART:BUART:rx_state_3\ * 
+              \SDI12_UART:BUART:rx_state_2\
+        );
+        Output = \SDI12_UART:BUART:rx_state_stop1_reg\ (fanout=1)
+
+    MacroCell: Name=\SDI12_UART:BUART:pollcount_1\, Mode=(D-Register)
+        Total # of inputs        : 5
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\SDI12_UART:BUART:rx_count_2\ * !\SDI12_UART:BUART:rx_count_1\ * 
+              !\SDI12_UART:BUART:pollcount_1\ * 
+              \SDI12_UART:BUART:pollcount_0\ * !Net_50
+            + !\SDI12_UART:BUART:rx_count_2\ * !\SDI12_UART:BUART:rx_count_1\ * 
+              \SDI12_UART:BUART:pollcount_1\ * 
+              !\SDI12_UART:BUART:pollcount_0\
+            + !\SDI12_UART:BUART:rx_count_2\ * !\SDI12_UART:BUART:rx_count_1\ * 
+              \SDI12_UART:BUART:pollcount_1\ * Net_50
+        );
+        Output = \SDI12_UART:BUART:pollcount_1\ (fanout=2)
+
+    MacroCell: Name=\SDI12_UART:BUART:pollcount_0\, Mode=(D-Register)
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\SDI12_UART:BUART:rx_count_2\ * !\SDI12_UART:BUART:rx_count_1\ * 
+              !\SDI12_UART:BUART:pollcount_0\ * !Net_50
+            + !\SDI12_UART:BUART:rx_count_2\ * !\SDI12_UART:BUART:rx_count_1\ * 
+              \SDI12_UART:BUART:pollcount_0\ * Net_50
+        );
+        Output = \SDI12_UART:BUART:pollcount_0\ (fanout=3)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_status_2\, Mode=(D-Register)
+        Total # of inputs        : 6
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_state_3\ * \SDI12_UART:BUART:rx_state_2\ * 
+              \SDI12_UART:BUART:rx_parity_error_pre\
+        );
+        Output = \SDI12_UART:BUART:rx_status_2\ (fanout=1)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_status_3\, Mode=(D-Register)
+        Total # of inputs        : 6
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              !\SDI12_UART:BUART:rx_postpoll\ * \SDI12_UART:BUART:rx_state_3\ * 
+              \SDI12_UART:BUART:rx_state_2\
+        );
+        Output = \SDI12_UART:BUART:rx_status_3\ (fanout=1)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_parity_error_pre\, Mode=(T-Register)
+        Total # of inputs        : 8
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              !\SDI12_UART:BUART:rx_postpoll\ * 
+              !\SDI12_UART:BUART:rx_state_3\ * \SDI12_UART:BUART:rx_state_2\ * 
+              \SDI12_UART:BUART:rx_parity_error_pre\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              !\SDI12_UART:BUART:rx_postpoll\ * \SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * 
+              !\SDI12_UART:BUART:rx_parity_error_pre\ * 
+              \SDI12_UART:BUART:rx_parity_bit\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_postpoll\ * \SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * 
+              !\SDI12_UART:BUART:rx_parity_error_pre\ * 
+              !\SDI12_UART:BUART:rx_parity_bit\
+        );
+        Output = \SDI12_UART:BUART:rx_parity_error_pre\ (fanout=2)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_last\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !Net_50
+        );
+        Output = \SDI12_UART:BUART:rx_last\ (fanout=1)
+
+    MacroCell: Name=\SDI12_UART:BUART:rx_parity_bit\, Mode=(T-Register)
+        Total # of inputs        : 7
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              !\SDI12_UART:BUART:rx_postpoll\ * 
+              !\SDI12_UART:BUART:rx_state_3\ * \SDI12_UART:BUART:rx_state_2\ * 
+              \SDI12_UART:BUART:rx_parity_bit\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_postpoll\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\
+        );
+        Output = \SDI12_UART:BUART:rx_parity_bit\ (fanout=2)
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Datapath listing">
+
+    ------------------------------------------------------------
+    Datapath listing
+    ------------------------------------------------------------
+
+    datapathcell: Name =\SDI12_UART:BUART:sTX:TxShifter:u0\
+        PORT MAP (
+            clock => \SDI12_UART:Net_9\ ,
+            cs_addr_2 => \SDI12_UART:BUART:tx_state_1\ ,
+            cs_addr_1 => \SDI12_UART:BUART:tx_state_0\ ,
+            cs_addr_0 => \SDI12_UART:BUART:tx_bitclk_enable_pre\ ,
+            so_comb => \SDI12_UART:BUART:tx_shift_out\ ,
+            f0_bus_stat_comb => \SDI12_UART:BUART:tx_fifo_notfull\ ,
+            f0_blk_stat_comb => \SDI12_UART:BUART:tx_fifo_empty\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000000000000000000000000000000000000000000000000000011000000000000000000000000000010010000000000000000000000000000000000000011111111000000001111111111111111000000000000000001000100111100000000000000001100"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    datapathcell: Name =\SDI12_UART:BUART:sTX:sCLOCK:TxBitClkGen\
+        PORT MAP (
+            clock => \SDI12_UART:Net_9\ ,
+            cs_addr_0 => \SDI12_UART:BUART:counter_load_not\ ,
+            ce0_reg => \SDI12_UART:BUART:tx_bitclk_enable_pre\ ,
+            ce1_reg => \SDI12_UART:BUART:tx_counter_dp\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "1010100001000000001000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111100000111001000000100000000000101111100000000000000001000"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    datapathcell: Name =\SDI12_UART:BUART:sRX:RxShifter:u0\
+        PORT MAP (
+            clock => \SDI12_UART:Net_9\ ,
+            cs_addr_2 => \SDI12_UART:BUART:tx_ctrl_mark_last\ ,
+            cs_addr_1 => \SDI12_UART:BUART:rx_state_0\ ,
+            cs_addr_0 => \SDI12_UART:BUART:rx_bitclk_enable\ ,
+            route_si => \SDI12_UART:BUART:rx_postpoll\ ,
+            f0_load => \SDI12_UART:BUART:rx_load_fifo\ ,
+            f0_bus_stat_comb => \SDI12_UART:BUART:rx_fifonotempty\ ,
+            f0_blk_stat_comb => \SDI12_UART:BUART:rx_fifofull\ );
+        Properties:
+        {
+            a0_init = "00000000"
+            a1_init = "00000000"
+            ce0_sync = 1
+            ce1_sync = 1
+            cl0_sync = 1
+            cl1_sync = 1
+            cmsb_sync = 1
+            co_msb_sync = 1
+            cy_dpconfig = "0000000000000000000000000000000000000000000000000000001001000000000100000000000000010000001100000001000000000000000100100001000001111111000000001111111101111111101000000110001001000001111000000000000000001100"
+            d0_init = "00000000"
+            d1_init = "00000000"
+            f0_blk_sync = 1
+            f0_bus_sync = 1
+            f1_blk_sync = 1
+            f1_bus_sync = 1
+            ff0_sync = 1
+            ff1_sync = 1
+            ov_msb_sync = 1
+            so_sync = 1
+            z0_sync = 1
+            z1_sync = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Status register listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="StatusI register listing">
+
+    ------------------------------------------------------------
+    StatusI register listing
+    ------------------------------------------------------------
+
+    statusicell: Name =\SDI12_UART:BUART:sTX:TxSts\
+        PORT MAP (
+            clock => \SDI12_UART:Net_9\ ,
+            status_3 => \SDI12_UART:BUART:tx_fifo_notfull\ ,
+            status_2 => \SDI12_UART:BUART:tx_status_2\ ,
+            status_1 => \SDI12_UART:BUART:tx_fifo_empty\ ,
+            status_0 => \SDI12_UART:BUART:tx_status_0\ );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "0000001"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+
+    statusicell: Name =\SDI12_UART:BUART:sRX:RxSts\
+        PORT MAP (
+            clock => \SDI12_UART:Net_9\ ,
+            status_5 => \SDI12_UART:BUART:rx_status_5\ ,
+            status_4 => \SDI12_UART:BUART:rx_status_4\ ,
+            status_3 => \SDI12_UART:BUART:rx_status_3\ ,
+            status_2 => \SDI12_UART:BUART:rx_status_2\ ,
+            interrupt => Net_9 );
+        Properties:
+        {
+            cy_force_order = 1
+            cy_int_mask = "1111111"
+            cy_md_select = "1011111"
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Sync listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Control register listing">
+
+    ------------------------------------------------------------
+    Control register listing
+    ------------------------------------------------------------
+
+    controlcell: Name =\SDI12_control_reg:Sync:ctrl_reg\
+        PORT MAP (
+            control_7 => \SDI12_control_reg:control_7\ ,
+            control_6 => \SDI12_control_reg:control_6\ ,
+            control_5 => \SDI12_control_reg:control_5\ ,
+            control_4 => \SDI12_control_reg:control_4\ ,
+            control_3 => \SDI12_control_reg:control_3\ ,
+            control_2 => \SDI12_control_reg:control_2\ ,
+            control_1 => \SDI12_control_reg:control_1\ ,
+            control_0 => Net_37 );
+        Properties:
+        {
+            cy_ctrl_mode_0 = "00000000"
+            cy_ctrl_mode_1 = "00000000"
+            cy_ext_reset = 0
+            cy_force_order = 1
+            cy_init_value = "00000000"
+        }
+        Clock Enable: True
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Count7 listing">
+
+    ------------------------------------------------------------
+    Count7 listing
+    ------------------------------------------------------------
+
+    count7cell: Name =\SDI12_UART:BUART:sRX:RxBitCounter\
+        PORT MAP (
+            clock => \SDI12_UART:Net_9\ ,
+            load => \SDI12_UART:BUART:rx_counter_load\ ,
+            count_6 => \SDI12_UART:BUART:rx_count_6\ ,
+            count_5 => \SDI12_UART:BUART:rx_count_5\ ,
+            count_4 => \SDI12_UART:BUART:rx_count_4\ ,
+            count_3 => \SDI12_UART:BUART:rx_count_3\ ,
+            count_2 => \SDI12_UART:BUART:rx_count_2\ ,
+            count_1 => \SDI12_UART:BUART:rx_count_1\ ,
+            count_0 => \SDI12_UART:BUART:rx_count_0\ ,
+            tc => \SDI12_UART:BUART:rx_count7_tc\ );
+        Properties:
+        {
+            cy_alt_mode = 0
+            cy_init_value = "0000000"
+            cy_period = "1110010"
+            cy_route_en = 1
+            cy_route_ld = 1
+        }
+        Clock Polarity: Active High
+        Clock Enable: True
+    </CYPRESSTAG>
+    <CYPRESSTAG name="DRQ listing">
+    </CYPRESSTAG>
+    <CYPRESSTAG name="Interrupt listing">
+
+    ------------------------------------------------------------
+    Interrupt listing
+    ------------------------------------------------------------
+
+    interrupt: Name =isr_SDI12
+        PORT MAP (
+            interrupt => Net_9 );
+        Properties:
+        {
+            int_type = "10"
+            is_nmi = 0
+        }
+    </CYPRESSTAG>
+</CYPRESSTAG>
+<CYPRESSTAG name="Technology mapping summary" expanded>
+
+------------------------------------------------------------
+Technology mapping summary
+------------------------------------------------------------
+
+Resource Type                 : Used : Free :  Max :  % Used
+============================================================
+Digital Clocks                :    1 :    7 :    8 : 12.50 %
+Analog Clocks                 :    0 :    4 :    4 :  0.00 %
+CapSense Buffers              :    0 :    2 :    2 :  0.00 %
+Digital Filter Block          :    0 :    1 :    1 :  0.00 %
+Interrupts                    :    1 :   31 :   32 :  3.13 %
+IO                            :    6 :   42 :   48 : 12.50 %
+Segment LCD                   :    0 :    1 :    1 :  0.00 %
+CAN 2.0b                      :    0 :    1 :    1 :  0.00 %
+I2C                           :    0 :    1 :    1 :  0.00 %
+USB                           :    0 :    1 :    1 :  0.00 %
+DMA Channels                  :    0 :   24 :   24 :  0.00 %
+Timer                         :    0 :    4 :    4 :  0.00 %
+UDB                           :      :      :      :        
+  Macrocells                  :   28 :  164 :  192 : 14.58 %
+  Unique P-terms              :   53 :  331 :  384 : 13.80 %
+  Total P-terms               :   58 :      :      :        
+  Datapath Cells              :    3 :   21 :   24 : 12.50 %
+  Status Cells                :    3 :   21 :   24 : 12.50 %
+    StatusI Registers         :    2 :      :      :        
+    Routed Count7 Load/Enable :    1 :      :      :        
+  Control Cells               :    2 :   22 :   24 :  8.33 %
+    Control Registers         :    1 :      :      :        
+    Count7 Cells              :    1 :      :      :        
+Opamp                         :    0 :    4 :    4 :  0.00 %
+Comparator                    :    0 :    4 :    4 :  0.00 %
+Delta-Sigma ADC               :    0 :    1 :    1 :  0.00 %
+LPF                           :    0 :    2 :    2 :  0.00 %
+SAR ADC                       :    0 :    2 :    2 :  0.00 %
+Analog (SC/CT) Blocks         :    0 :    4 :    4 :  0.00 %
+DAC                           :      :      :      :        
+  VIDAC                       :    0 :    4 :    4 :  0.00 %
+</CYPRESSTAG>
+Technology Mapping: Elapsed time ==> 0s.060ms
+Tech Mapping phase: Elapsed time ==> 0s.195ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Placement">
+Initial Analog Placement Results:
+IO_0@[IOP=(2)][IoId=(0)] : LED(0) (fixed)
+IO_1@[IOP=(3)][IoId=(1)] : SDI12_Data(0) (fixed)
+IO_0@[IOP=(3)][IoId=(0)] : SDI12_Power(0) (fixed)
+Analog Placement phase: Elapsed time ==> 0s.057ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Routing">
+Analog Routing phase: Elapsed time ==> 0s.001ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Analog Code Generation">
+============ Analog Final Answer Routes ============
+Dump of CyAnalogRoutingResultsDB
+Map of net to items {
+}
+Map of item to net {
+}
+Mux Info {
+}
+Dump of CyP35AnalogRoutingResultsDB
+IsVddaHalfUsedForComp = False
+IsVddaHalfUsedForSar0 = False
+IsVddaHalfUsedForSar1 = False
+Analog Code Generation phase: Elapsed time ==> 0s.310ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Digital Placement">
+<CYPRESSTAG name="Detailed placement messages">
+I2076: Total run-time: 0.6 sec.
+
+</CYPRESSTAG>
+<CYPRESSTAG name="PLD Packing">
+<CYPRESSTAG name="PLD Packing Summary" expanded>
+
+------------------------------------------------------------
+PLD Packing Summary
+------------------------------------------------------------
+            Resource Type : Used : Free :  Max :  % Used
+    ====================================================
+                     PLDs :   11 :   37 :   48 :  22.92%
+
+<CYPRESSTAG name="PLD Statistics">
+
+        PLD Resource Type :     Average/LAB
+    =======================================
+                   Inputs :            8.00
+                   Pterms :            5.18
+               Macrocells :            2.55
+</CYPRESSTAG>
+<CYPRESSTAG name="Packed PLD Contents">
+Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
+</CYPRESSTAG>
+PLD Packing: Elapsed time ==> 0s.002ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Partitioning">
+<CYPRESSTAG name="Initial Partitioning Summary">
+Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
+<CYPRESSTAG name="Final Partitioning Summary">
+Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
+Partitioning: Elapsed time ==> 0s.021ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Final Placement Summary">
+
+------------------------------------------------------------
+Final Placement Summary
+------------------------------------------------------------
+
+       Resource Type :      Count : Avg Inputs : Avg Outputs
+    ========================================================
+                 UDB :          6 :      12.50 :       4.67
+<CYPRESSTAG name="Final Placement Details">
+<CYPRESSTAG name="Component Details">
+
+------------------------------------------------------------
+Component Placement Details
+------------------------------------------------------------
+UDB [UDB=(0,0)] is empty.
+UDB [UDB=(0,1)] is empty.
+UDB [UDB=(0,2)] is empty.
+UDB [UDB=(0,3)] is empty.
+UDB [UDB=(0,4)] is empty.
+UDB [UDB=(0,5)] is empty.
+UDB [UDB=(1,0)] is empty.
+UDB [UDB=(1,1)] is empty.
+UDB [UDB=(1,2)] is empty.
+UDB [UDB=(1,3)] is empty.
+UDB [UDB=(1,4)] is empty.
+UDB [UDB=(1,5)] is empty.
+UDB [UDB=(2,0)] contents:
+LAB@[UDB=(2,0)][LB=0] #macrocells=3, #inputs=6, #pterms=6
+{
+    [McSlotId=0]:     MacroCell: Name=\SDI12_UART:BUART:pollcount_1\, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=0]
+        Total # of inputs        : 5
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\SDI12_UART:BUART:rx_count_2\ * !\SDI12_UART:BUART:rx_count_1\ * 
+              !\SDI12_UART:BUART:pollcount_1\ * 
+              \SDI12_UART:BUART:pollcount_0\ * !Net_50
+            + !\SDI12_UART:BUART:rx_count_2\ * !\SDI12_UART:BUART:rx_count_1\ * 
+              \SDI12_UART:BUART:pollcount_1\ * 
+              !\SDI12_UART:BUART:pollcount_0\
+            + !\SDI12_UART:BUART:rx_count_2\ * !\SDI12_UART:BUART:rx_count_1\ * 
+              \SDI12_UART:BUART:pollcount_1\ * Net_50
+        );
+        Output = \SDI12_UART:BUART:pollcount_1\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\SDI12_UART:BUART:pollcount_0\, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=1]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\SDI12_UART:BUART:rx_count_2\ * !\SDI12_UART:BUART:rx_count_1\ * 
+              !\SDI12_UART:BUART:pollcount_0\ * !Net_50
+            + !\SDI12_UART:BUART:rx_count_2\ * !\SDI12_UART:BUART:rx_count_1\ * 
+              \SDI12_UART:BUART:pollcount_0\ * Net_50
+        );
+        Output = \SDI12_UART:BUART:pollcount_0\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\SDI12_UART:BUART:rx_bitclk_enable\, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=2]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:rx_count_2\ * !\SDI12_UART:BUART:rx_count_1\ * 
+              !\SDI12_UART:BUART:rx_count_0\
+        );
+        Output = \SDI12_UART:BUART:rx_bitclk_enable\ (fanout=9)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(2,0)][LB=1] #macrocells=2, #inputs=6, #pterms=2
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\SDI12_UART:BUART:rx_counter_load\, Mode=(Combinatorial) @ [UDB=(2,0)][LB=1][MC=1]
+        Total # of inputs        : 4
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\
+        );
+        Output = \SDI12_UART:BUART:rx_counter_load\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\SDI12_UART:BUART:rx_status_2\, Mode=(D-Register) @ [UDB=(2,0)][LB=1][MC=2]
+        Total # of inputs        : 6
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_state_3\ * \SDI12_UART:BUART:rx_state_2\ * 
+              \SDI12_UART:BUART:rx_parity_error_pre\
+        );
+        Output = \SDI12_UART:BUART:rx_status_2\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+statusicell: Name =\SDI12_UART:BUART:sRX:RxSts\
+    PORT MAP (
+        clock => \SDI12_UART:Net_9\ ,
+        status_5 => \SDI12_UART:BUART:rx_status_5\ ,
+        status_4 => \SDI12_UART:BUART:rx_status_4\ ,
+        status_3 => \SDI12_UART:BUART:rx_status_3\ ,
+        status_2 => \SDI12_UART:BUART:rx_status_2\ ,
+        interrupt => Net_9 );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "1011111"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(2,1)] contents:
+LAB@[UDB=(2,1)][LB=0] #macrocells=3, #inputs=11, #pterms=7
+{
+    [McSlotId=0]:     MacroCell: Name=\SDI12_UART:BUART:rx_state_0\, Mode=(T-Register) @ [UDB=(2,1)][LB=0][MC=0]
+        Total # of inputs        : 10
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              !\SDI12_UART:BUART:rx_postpoll\ * 
+              !\SDI12_UART:BUART:rx_state_3\ * \SDI12_UART:BUART:rx_state_2\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * !\SDI12_UART:BUART:rx_count_6\ * 
+              !\SDI12_UART:BUART:rx_count_5\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * !\SDI12_UART:BUART:rx_count_6\ * 
+              !\SDI12_UART:BUART:rx_count_4\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * !\SDI12_UART:BUART:rx_count_6\ * 
+              !\SDI12_UART:BUART:rx_count_3\
+        );
+        Output = \SDI12_UART:BUART:rx_state_0\ (fanout=11)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=\SDI12_UART:BUART:rx_parity_bit\, Mode=(T-Register) @ [UDB=(2,1)][LB=0][MC=2]
+        Total # of inputs        : 7
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              !\SDI12_UART:BUART:rx_postpoll\ * 
+              !\SDI12_UART:BUART:rx_state_3\ * \SDI12_UART:BUART:rx_state_2\ * 
+              \SDI12_UART:BUART:rx_parity_bit\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_postpoll\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\
+        );
+        Output = \SDI12_UART:BUART:rx_parity_bit\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\SDI12_UART:BUART:rx_status_3\, Mode=(D-Register) @ [UDB=(2,1)][LB=0][MC=3]
+        Total # of inputs        : 6
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              !\SDI12_UART:BUART:rx_postpoll\ * \SDI12_UART:BUART:rx_state_3\ * 
+              \SDI12_UART:BUART:rx_state_2\
+        );
+        Output = \SDI12_UART:BUART:rx_status_3\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(2,1)][LB=1] #macrocells=4, #inputs=11, #pterms=6
+{
+    [McSlotId=0]:     MacroCell: Name=\SDI12_UART:BUART:rx_postpoll\, Mode=(Combinatorial) @ [UDB=(2,1)][LB=1][MC=0]
+        Total # of inputs        : 3
+        Total # of product terms : 2
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \SDI12_UART:BUART:pollcount_1\
+            + \SDI12_UART:BUART:pollcount_0\ * !Net_50
+        );
+        Output = \SDI12_UART:BUART:rx_postpoll\ (fanout=5)
+        Properties               : 
+        {
+            soft = 1
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\SDI12_UART:BUART:rx_parity_error_pre\, Mode=(T-Register) @ [UDB=(2,1)][LB=1][MC=1]
+        Total # of inputs        : 8
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              !\SDI12_UART:BUART:rx_postpoll\ * 
+              !\SDI12_UART:BUART:rx_state_3\ * \SDI12_UART:BUART:rx_state_2\ * 
+              \SDI12_UART:BUART:rx_parity_error_pre\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              !\SDI12_UART:BUART:rx_postpoll\ * \SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * 
+              !\SDI12_UART:BUART:rx_parity_error_pre\ * 
+              \SDI12_UART:BUART:rx_parity_bit\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_postpoll\ * \SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * 
+              !\SDI12_UART:BUART:rx_parity_error_pre\ * 
+              !\SDI12_UART:BUART:rx_parity_bit\
+        );
+        Output = \SDI12_UART:BUART:rx_parity_error_pre\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\SDI12_UART:BUART:tx_ctrl_mark_last\, Mode=(T-Register) @ [UDB=(2,1)][LB=1][MC=2]
+        Total # of inputs        : 0
+        Total # of product terms : 0
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 0 pterms
+        (
+            0
+        );
+        Output = \SDI12_UART:BUART:tx_ctrl_mark_last\ (fanout=11)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\SDI12_UART:BUART:rx_load_fifo\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=3]
+        Total # of inputs        : 5
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_state_3\ * !\SDI12_UART:BUART:rx_state_2\
+        );
+        Output = \SDI12_UART:BUART:rx_load_fifo\ (fanout=2)
+        Properties               : 
+        {
+        }
+}
+
+count7cell: Name =\SDI12_UART:BUART:sRX:RxBitCounter\
+    PORT MAP (
+        clock => \SDI12_UART:Net_9\ ,
+        load => \SDI12_UART:BUART:rx_counter_load\ ,
+        count_6 => \SDI12_UART:BUART:rx_count_6\ ,
+        count_5 => \SDI12_UART:BUART:rx_count_5\ ,
+        count_4 => \SDI12_UART:BUART:rx_count_4\ ,
+        count_3 => \SDI12_UART:BUART:rx_count_3\ ,
+        count_2 => \SDI12_UART:BUART:rx_count_2\ ,
+        count_1 => \SDI12_UART:BUART:rx_count_1\ ,
+        count_0 => \SDI12_UART:BUART:rx_count_0\ ,
+        tc => \SDI12_UART:BUART:rx_count7_tc\ );
+    Properties:
+    {
+        cy_alt_mode = 0
+        cy_init_value = "0000000"
+        cy_period = "1110010"
+        cy_route_en = 1
+        cy_route_ld = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(2,2)] contents:
+LAB@[UDB=(2,2)][LB=0] #macrocells=1, #inputs=8, #pterms=7
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\SDI12_UART:BUART:txn\, Mode=(D-Register) @ [UDB=(2,2)][LB=0][MC=1]
+        Total # of inputs        : 8
+        Total # of product terms : 7
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 7 pterms
+        (
+              !\SDI12_UART:BUART:txn\ * \SDI12_UART:BUART:tx_state_1\ * 
+              !\SDI12_UART:BUART:tx_state_0\ * !\SDI12_UART:BUART:tx_state_2\ * 
+              \SDI12_UART:BUART:tx_counter_dp\ * \SDI12_UART:BUART:tx_bitclk\ * 
+              \SDI12_UART:BUART:tx_parity_bit\
+            + \SDI12_UART:BUART:txn\ * \SDI12_UART:BUART:tx_state_1\ * 
+              !\SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_counter_dp\ * 
+              !\SDI12_UART:BUART:tx_parity_bit\
+            + \SDI12_UART:BUART:txn\ * \SDI12_UART:BUART:tx_state_1\ * 
+              !\SDI12_UART:BUART:tx_bitclk\
+            + \SDI12_UART:BUART:txn\ * \SDI12_UART:BUART:tx_state_2\
+            + !\SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_shift_out\ * 
+              !\SDI12_UART:BUART:tx_state_2\
+            + !\SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_state_2\ * !\SDI12_UART:BUART:tx_bitclk\
+            + \SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_shift_out\ * 
+              !\SDI12_UART:BUART:tx_state_2\ * 
+              !\SDI12_UART:BUART:tx_counter_dp\ * 
+              \SDI12_UART:BUART:tx_bitclk\
+        );
+        Output = \SDI12_UART:BUART:txn\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(2,2)][LB=1] #macrocells=1, #inputs=9, #pterms=4
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=\SDI12_UART:BUART:rx_state_3\, Mode=(T-Register) @ [UDB=(2,2)][LB=1][MC=2]
+        Total # of inputs        : 9
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_state_3\ * \SDI12_UART:BUART:rx_state_2\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * !\SDI12_UART:BUART:rx_count_6\ * 
+              !\SDI12_UART:BUART:rx_count_5\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * !\SDI12_UART:BUART:rx_count_6\ * 
+              !\SDI12_UART:BUART:rx_count_4\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              \SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * !\SDI12_UART:BUART:rx_count_6\ * 
+              !\SDI12_UART:BUART:rx_count_3\
+        );
+        Output = \SDI12_UART:BUART:rx_state_3\ (fanout=10)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\SDI12_UART:BUART:sTX:TxShifter:u0\
+    PORT MAP (
+        clock => \SDI12_UART:Net_9\ ,
+        cs_addr_2 => \SDI12_UART:BUART:tx_state_1\ ,
+        cs_addr_1 => \SDI12_UART:BUART:tx_state_0\ ,
+        cs_addr_0 => \SDI12_UART:BUART:tx_bitclk_enable_pre\ ,
+        so_comb => \SDI12_UART:BUART:tx_shift_out\ ,
+        f0_bus_stat_comb => \SDI12_UART:BUART:tx_fifo_notfull\ ,
+        f0_blk_stat_comb => \SDI12_UART:BUART:tx_fifo_empty\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000000000000000000000000000000000000000000000000000011000000000000000000000000000010010000000000000000000000000000000000000011111111000000001111111111111111000000000000000001000100111100000000000000001100"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(2,3)] is empty.
+UDB [UDB=(2,4)] is empty.
+UDB [UDB=(2,5)] is empty.
+UDB [UDB=(3,0)] contents:
+LAB@[UDB=(3,0)][LB=0] #macrocells=3, #inputs=6, #pterms=3
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=Net_45, Mode=(Combinatorial) @ [UDB=(3,0)][LB=0][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        !(
+              !\SDI12_UART:BUART:txn\ * !Net_37
+        );
+        Output = Net_45 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\SDI12_UART:BUART:rx_status_5\, Mode=(Combinatorial) @ [UDB=(3,0)][LB=0][MC=2]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \SDI12_UART:BUART:rx_fifonotempty\ * 
+              \SDI12_UART:BUART:rx_state_stop1_reg\
+        );
+        Output = \SDI12_UART:BUART:rx_status_5\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\SDI12_UART:BUART:rx_status_4\, Mode=(Combinatorial) @ [UDB=(3,0)][LB=0][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \SDI12_UART:BUART:rx_load_fifo\ * 
+              \SDI12_UART:BUART:rx_fifofull\
+        );
+        Output = \SDI12_UART:BUART:rx_status_4\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(3,0)][LB=1] #macrocells=3, #inputs=11, #pterms=6
+{
+    [McSlotId=0]:     MacroCell: Name=\SDI12_UART:BUART:rx_state_2\, Mode=(T-Register) @ [UDB=(3,0)][LB=1][MC=0]
+        Total # of inputs        : 7
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_state_3\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * 
+              \SDI12_UART:BUART:rx_bitclk_enable\ * 
+              \SDI12_UART:BUART:rx_state_2\
+            + !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * !\SDI12_UART:BUART:rx_state_3\ * 
+              !\SDI12_UART:BUART:rx_state_2\ * \SDI12_UART:BUART:rx_last\ * 
+              Net_50
+        );
+        Output = \SDI12_UART:BUART:rx_state_2\ (fanout=10)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=\SDI12_UART:BUART:rx_last\, Mode=(D-Register) @ [UDB=(3,0)][LB=1][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !Net_50
+        );
+        Output = \SDI12_UART:BUART:rx_last\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\SDI12_UART:BUART:counter_load_not\, Mode=(Combinatorial) @ [UDB=(3,0)][LB=1][MC=3]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        !(
+              !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\
+            + !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_state_2\
+        );
+        Output = \SDI12_UART:BUART:counter_load_not\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+datapathcell: Name =\SDI12_UART:BUART:sTX:sCLOCK:TxBitClkGen\
+    PORT MAP (
+        clock => \SDI12_UART:Net_9\ ,
+        cs_addr_0 => \SDI12_UART:BUART:counter_load_not\ ,
+        ce0_reg => \SDI12_UART:BUART:tx_bitclk_enable_pre\ ,
+        ce1_reg => \SDI12_UART:BUART:tx_counter_dp\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "1010100001000000001000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111100000111001000000100000000000101111100000000000000001000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+controlcell: Name =\SDI12_control_reg:Sync:ctrl_reg\
+    PORT MAP (
+        control_7 => \SDI12_control_reg:control_7\ ,
+        control_6 => \SDI12_control_reg:control_6\ ,
+        control_5 => \SDI12_control_reg:control_5\ ,
+        control_4 => \SDI12_control_reg:control_4\ ,
+        control_3 => \SDI12_control_reg:control_3\ ,
+        control_2 => \SDI12_control_reg:control_2\ ,
+        control_1 => \SDI12_control_reg:control_1\ ,
+        control_0 => Net_37 );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000000"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Enable: True
+
+UDB [UDB=(3,1)] contents:
+LAB@[UDB=(3,1)][LB=1] #macrocells=1, #inputs=1, #pterms=1
+{
+    [McSlotId=0]:     MacroCell: Name=\SDI12_UART:BUART:tx_status_2\, Mode=(Combinatorial) @ [UDB=(3,1)][LB=1][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:tx_fifo_notfull\
+        );
+        Output = \SDI12_UART:BUART:tx_status_2\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\SDI12_UART:BUART:sRX:RxShifter:u0\
+    PORT MAP (
+        clock => \SDI12_UART:Net_9\ ,
+        cs_addr_2 => \SDI12_UART:BUART:tx_ctrl_mark_last\ ,
+        cs_addr_1 => \SDI12_UART:BUART:rx_state_0\ ,
+        cs_addr_0 => \SDI12_UART:BUART:rx_bitclk_enable\ ,
+        route_si => \SDI12_UART:BUART:rx_postpoll\ ,
+        f0_load => \SDI12_UART:BUART:rx_load_fifo\ ,
+        f0_bus_stat_comb => \SDI12_UART:BUART:rx_fifonotempty\ ,
+        f0_blk_stat_comb => \SDI12_UART:BUART:rx_fifofull\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000000000000000000000000000000000000000000000000001001000000000100000000000000010000001100000001000000000000000100100001000001111111000000001111111101111111101000000110001001000001111000000000000000001100"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+statusicell: Name =\SDI12_UART:BUART:sTX:TxSts\
+    PORT MAP (
+        clock => \SDI12_UART:Net_9\ ,
+        status_3 => \SDI12_UART:BUART:tx_fifo_notfull\ ,
+        status_2 => \SDI12_UART:BUART:tx_status_2\ ,
+        status_1 => \SDI12_UART:BUART:tx_fifo_empty\ ,
+        status_0 => \SDI12_UART:BUART:tx_status_0\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0000001"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(3,2)] contents:
+LAB@[UDB=(3,2)][LB=0] #macrocells=3, #inputs=7, #pterms=8
+{
+    [McSlotId=0]:     MacroCell: Name=\SDI12_UART:BUART:tx_state_0\, Mode=(T-Register) @ [UDB=(3,2)][LB=0][MC=0]
+        Total # of inputs        : 7
+        Total # of product terms : 5
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 5 pterms
+        (
+              !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\ * 
+              !\SDI12_UART:BUART:tx_fifo_empty\
+            + !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_fifo_empty\ * 
+              !\SDI12_UART:BUART:tx_state_2\
+            + \SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\ * 
+              \SDI12_UART:BUART:tx_fifo_empty\ * 
+              \SDI12_UART:BUART:tx_state_2\
+            + \SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_2\ * 
+              \SDI12_UART:BUART:tx_counter_dp\ * \SDI12_UART:BUART:tx_bitclk\
+            + \SDI12_UART:BUART:tx_state_0\ * !\SDI12_UART:BUART:tx_state_2\ * 
+              \SDI12_UART:BUART:tx_bitclk\
+        );
+        Output = \SDI12_UART:BUART:tx_state_0\ (fanout=9)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\SDI12_UART:BUART:tx_bitclk\, Mode=(D-Register) @ [UDB=(3,2)][LB=0][MC=1]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        !(
+              !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_state_2\
+            + !\SDI12_UART:BUART:tx_bitclk_enable_pre\
+        );
+        Output = \SDI12_UART:BUART:tx_bitclk\ (fanout=5)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\SDI12_UART:BUART:tx_state_1\, Mode=(T-Register) @ [UDB=(3,2)][LB=0][MC=2]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\ * 
+              \SDI12_UART:BUART:tx_state_2\
+            + \SDI12_UART:BUART:tx_state_0\ * !\SDI12_UART:BUART:tx_state_2\ * 
+              \SDI12_UART:BUART:tx_bitclk\
+        );
+        Output = \SDI12_UART:BUART:tx_state_1\ (fanout=9)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(3,2)][LB=1] #macrocells=4, #inputs=12, #pterms=7
+{
+    [McSlotId=0]:     MacroCell: Name=\SDI12_UART:BUART:tx_parity_bit\, Mode=(T-Register) @ [UDB=(3,2)][LB=1][MC=0]
+        Total # of inputs        : 6
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              !\SDI12_UART:BUART:txn\ * \SDI12_UART:BUART:tx_state_1\ * 
+              !\SDI12_UART:BUART:tx_state_0\ * !\SDI12_UART:BUART:tx_state_2\ * 
+              \SDI12_UART:BUART:tx_bitclk\
+            + !\SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_state_2\ * \SDI12_UART:BUART:tx_bitclk\ * 
+              \SDI12_UART:BUART:tx_parity_bit\
+        );
+        Output = \SDI12_UART:BUART:tx_parity_bit\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\SDI12_UART:BUART:tx_state_2\, Mode=(T-Register) @ [UDB=(3,2)][LB=1][MC=1]
+        Total # of inputs        : 5
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 3 pterms
+        (
+              !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\ * 
+              \SDI12_UART:BUART:tx_state_2\
+            + \SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\ * 
+              \SDI12_UART:BUART:tx_state_2\
+            + \SDI12_UART:BUART:tx_state_1\ * \SDI12_UART:BUART:tx_state_0\ * 
+              !\SDI12_UART:BUART:tx_state_2\ * \SDI12_UART:BUART:tx_bitclk\
+        );
+        Output = \SDI12_UART:BUART:tx_state_2\ (fanout=8)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\SDI12_UART:BUART:tx_status_0\, Mode=(Combinatorial) @ [UDB=(3,2)][LB=1][MC=2]
+        Total # of inputs        : 5
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\SDI12_UART:BUART:tx_state_1\ * !\SDI12_UART:BUART:tx_state_0\ * 
+              \SDI12_UART:BUART:tx_bitclk_enable_pre\ * 
+              \SDI12_UART:BUART:tx_fifo_empty\ * 
+              \SDI12_UART:BUART:tx_state_2\
+        );
+        Output = \SDI12_UART:BUART:tx_status_0\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\SDI12_UART:BUART:rx_state_stop1_reg\, Mode=(D-Register) @ [UDB=(3,2)][LB=1][MC=3]
+        Total # of inputs        : 4
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\SDI12_UART:Net_9\) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        !(
+              !\SDI12_UART:BUART:tx_ctrl_mark_last\ * 
+              !\SDI12_UART:BUART:rx_state_0\ * \SDI12_UART:BUART:rx_state_3\ * 
+              \SDI12_UART:BUART:rx_state_2\
+        );
+        Output = \SDI12_UART:BUART:rx_state_stop1_reg\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+UDB [UDB=(3,3)] is empty.
+UDB [UDB=(3,4)] is empty.
+UDB [UDB=(3,5)] is empty.
+Intr container @ [IntrContainer=(0)]: 
+  Intr@ [IntrContainer=(0)][IntrId=(0)] 
+    interrupt: Name =isr_SDI12
+        PORT MAP (
+            interrupt => Net_9 );
+        Properties:
+        {
+            int_type = "10"
+            is_nmi = 0
+        }
+Drq container @ [DrqContainer=(0)]: empty
+Port 0 contains the following IO cells:
+Port 1 contains the following IO cells:
+Port 2 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = LED(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => LED(0)__PA ,
+        pad => LED(0)_PAD );
+    Properties:
+    {
+    }
+
+Port 3 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = SDI12_Power(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => SDI12_Power(0)__PA ,
+        pad => SDI12_Power(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=1]: 
+Pin : Name = SDI12_Data(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: RES_PULL_DOWN
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL, ROUTABLE
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => SDI12_Data(0)__PA ,
+        pin_input => Net_45 ,
+        fb => Net_50 ,
+        pad => SDI12_Data(0)_PAD );
+    Properties:
+    {
+    }
+
+Port 12 contains the following IO cells:
+Port 15 contains the following IO cells:
+ARM group 0: empty
+CAN group 0: empty
+Cache group 0: empty
+CapSense group 0: empty
+Clock group 0: 
+    Clock Block @ F(Clock,0): 
+    clockblockcell: Name =ClockBlock
+        PORT MAP (
+            imo => ClockBlock_IMO ,
+            pllout => ClockBlock_PLL_OUT ,
+            ilo => ClockBlock_ILO ,
+            clk_100k => ClockBlock_100k ,
+            clk_1k => ClockBlock_1k ,
+            clk_32k => ClockBlock_32k ,
+            xtal => ClockBlock_XTAL ,
+            clk_32k_xtal => ClockBlock_XTAL_32KHZ ,
+            clk_sync => ClockBlock_MASTER_CLK ,
+            clk_bus_glb => ClockBlock_BUS_CLK ,
+            clk_bus => ClockBlock_BUS_CLK_local ,
+            dclk_glb_0 => \SDI12_UART:Net_9\ ,
+            dclk_0 => \SDI12_UART:Net_9_local\ );
+        Properties:
+        {
+        }
+Comparator group 0: empty
+DFB group 0: empty
+DSM group 0: empty
+Decimator group 0: empty
+EMIF group 0: empty
+I2C group 0: empty
+LCD group 0: empty
+LVD group 0: empty
+PICU group 0: empty
+PM group 0: empty
+SC group 0: empty
+SPC group 0: empty
+Timer group 0: empty
+USB group 0: empty
+VIDAC group 0: empty
+OpAmp group 0: empty
+CsAbuf group 0: empty
+Vref group 0: empty
+LPF group 0: empty
+SAR group 0: empty
+ANAIF group 0: empty
+PHUB group 0: empty
+</CYPRESSTAG>
+<CYPRESSTAG name="Port Configuration Details">
+
+------------------------------------------------------------
+Port Configuration report
+------------------------------------------------------------
+     |     |       | Interrupt |                  |                | 
+Port | Pin | Fixed |      Type |       Drive Mode |           Name | Connections
+-----+-----+-------+-----------+------------------+----------------+-----------------------
+   2 |   0 |     * |      NONE |         CMOS_OUT |         LED(0) | 
+-----+-----+-------+-----------+------------------+----------------+-----------------------
+   3 |   0 |     * |      NONE |         CMOS_OUT | SDI12_Power(0) | 
+     |   1 |     * |      NONE |    RES_PULL_DOWN |  SDI12_Data(0) | FB(Net_50), In(Net_45)
+-------------------------------------------------------------------------------------------
+</CYPRESSTAG>
+</CYPRESSTAG>
+</CYPRESSTAG>
+Digital component placer commit/Report: Elapsed time ==> 0s.016ms
+Digital Placement phase: Elapsed time ==> 0s.940ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Digital Routing">
+"C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files\Cypress\PSoC Creator\4.1\PSoC Creator\dev\psoc5/psoc5lp/route_arch-rrg.cydata" --vh2-path "SDI-12_r.vh2" --pcf-path "SDI-12.pco" --des-name "SDI-12" --dsf-path "SDI-12.dsf" --sdc-path "SDI-12.sdc" --lib-path "SDI-12_r.lib"
+Routing successful.
+Digital Routing phase: Elapsed time ==> 2s.455ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Bitstream Generation">
+Bitstream Generation phase: Elapsed time ==> 0s.207ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Bitstream Verification">
+Bitstream Verification phase: Elapsed time ==> 0s.090ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Static timing analysis">
+Warning: sta.M0019: SDI-12_timing.html: Warning-1366: Setup time violation found in a path from clock ( CyBUS_CLK ) to clock ( SDI12_UART_IntClock ). (File=C:\Users\mame\Documents\psoc\SDI-12.cydsn\SDI-12_timing.html)
+Timing report is in SDI-12_timing.html.
+Static timing analysis phase: Elapsed time ==> 1s.729ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Data reporting">
+Data reporting phase: Elapsed time ==> 0s.000ms
+</CYPRESSTAG>
+<CYPRESSTAG name="Database update...">
+Design database save phase: Elapsed time ==> 0s.440ms
+</CYPRESSTAG>
+cydsfit: Elapsed time ==> 6s.459ms
+</CYPRESSTAG>
+Fitter phase: Elapsed time ==> 6s.460ms
+API generation phase: Elapsed time ==> 2s.094ms
+Dependency generation phase: Elapsed time ==> 0s.147ms
+Cleanup phase: Elapsed time ==> 0s.001ms

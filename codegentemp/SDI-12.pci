@@ -1,0 +1,12 @@
+# SDI-12
+# 2017-12-04 17:12:22Z
+
+# IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 0
+# IO_1@[IOP=(1)][IoId=(1)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 1
+# IO_3@[IOP=(1)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 3
+set_io "SDI12_Power(0)" iocell 3 0
+set_io "SDI12_Data(0)" iocell 3 1
+set_io "LED(0)" iocell 2 0
